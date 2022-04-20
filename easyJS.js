@@ -121,15 +121,43 @@ function detectWord(str) {
 // detectWord("bEEFGBuFBRrHgUHlNFYaYr")
 
 
-function largestSwap(a, b) {
-    var newArray = []
-    for (let i = 0; i < arguments.length; i++) {
-        newArray.push(arguments[i])
-    
-    }
-    console.log(newArray);
-    var split = newArray.length
-    console.log(split);
-}
 
-// largestSwap(45)
+// Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.\
+// example:
+// If 27 is our input, we should return false because swapping the digits gives us 72, and 72 > 27. On the other hand, swapping 43 gives us 34, and 43 > 34.
+function largestSwap(number) {
+    var num = number.toString().split("").reverse().join("")
+    return num < number ? true : false
+
+}
+// console.log(largestSwap(53));
+
+
+
+// Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.
+
+// Examples
+// charCount("a", "edabit") ➞ 1
+
+// charCount("c", "Chamber of secrets") ➞ 1
+
+// charCount("b", "big fat bubble") ➞ 4
+function charCount(myChar, str) {
+	let count = 0;
+	for (let i=0; i<str.length; i++) {
+		if (str.charAt(i) === myChar) {
+			count++;
+		}
+	}
+	console.log(count);
+}
+// charCount("c", "Chamber of secrets") 
+
+
+// Create a function to return the amount of potatoes there are in a string.
+
+function potatoes(str) {
+	return str.split("potato").length - 1
+}
+// console.log(potatoes("potatopotato"));
+
