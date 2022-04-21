@@ -161,3 +161,81 @@ function potatoes(str) {
 }
 // console.log(potatoes("potatopotato"));
 
+function spoonerise(str){
+    var split = str.split("")
+    console.log((split));
+}
+
+
+// spoonerise("history lecture") 
+
+// Create a function which returns the number of true values there are in an array.
+function countTrue(array){
+    var count = array.reduce((total, e) => (e == true ? total+1 : total), 0)
+    console.log(count);
+}
+// countTrue([true, false, false, true, false])
+
+
+
+// Create a function that will return an integer number corresponding to the amount of digits in the given integer num.
+function num_of_digits(number){
+    return number.toString()
+}
+var result = num_of_digits(1305981031)
+// console.log(result.length);
+
+
+
+
+// Create a function that takes an array of non-negative integers and strings and return a new array without the strings.
+function filterArray(array){
+
+    var newArray = []
+    for (let i = 0; i < array.length; i++) {
+        if( array[i] !== array[i].toString()){
+            newArray.push(array[i])
+        } else {
+            null
+        }
+    }
+    console.log(newArray)
+}
+
+// filterArray([1, "a", "b", 0, 15])
+// filterArray([1, 2, "a", "b"])
+// filterArray([1, 2, "aasf", "1", "123", 123])
+
+const seriesResistance = (array) => {
+    var result = array.reduce(((a, b) => a + b), 0)
+    if (result == 1) {
+        var n = result.toFixed(1)
+        console.log(`${n} ohm`);
+    } else {
+        console.log(`${result} ohms`);
+    }
+}
+
+// seriesResistance([1, 5, 6, 3])
+// seriesResistance([16, 3.5, 6])
+// seriesResistance([0.5, 0.5])
+
+
+
+
+// Given a number, return an array containing the two halves of the number. If the number is odd, make the rightmost number higher.
+
+function numberSplit(number){
+    var a = number / 2
+    var b = number / 2
+    // if (number % 2 == 0) {
+    //     console.log([a, b]);
+    // } else {
+    //     console.log([Math.floor(a), Math.round(b)]);
+    // }
+    var check = number % 2 == 0 ? ([a, b]) : ([Math.floor(a), Math.round(b)])
+    console.log(check); 
+}
+numberSplit(4)
+numberSplit(11)
+numberSplit(-9)
