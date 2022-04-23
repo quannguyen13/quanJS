@@ -246,6 +246,28 @@ function toArray(obj) {
     var convert = Object.entries(obj)
     console.log(convert);
 }
-toArray({ a: 1, b: 2 }) 
-toArray({ shrimp: 15, tots: 12 })
-toArray({})
+// toArray({ a: 1, b: 2 }) 
+// toArray({ shrimp: 15, tots: 12 })
+// toArray({})
+
+
+function add_less(str) {
+    return str + "less"
+}
+// console.log(add_less("fear"));
+
+function concat() {
+    var newArray = []
+    for (let i = 0; i < arguments.length; i++) {
+        newArray.push(arguments[i])
+        
+    }
+    // console.log(newArray);
+    for (let j = 0; j < newArray.length; j++) {
+        var result1 = newArray[j]
+        var result2 = newArray.concat(newArray[j+1])
+        console.log(result2);
+        
+    }
+}
+concat([1, 2, 3], [4, 5], [6, 7]) 
