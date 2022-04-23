@@ -182,7 +182,7 @@ function countTrue(array){
 function num_of_digits(number){
     return number.toString()
 }
-var result = num_of_digits(1305981031)
+// var result = num_of_digits(1305981031)
 // console.log(result.length);
 
 
@@ -236,6 +236,16 @@ function numberSplit(number){
     var check = number % 2 == 0 ? ([a, b]) : ([Math.floor(a), Math.round(b)])
     console.log(check); 
 }
-numberSplit(4)
-numberSplit(11)
-numberSplit(-9)
+// numberSplit(4)
+// numberSplit(11)
+// numberSplit(-9)
+
+
+
+function toArray(obj) {
+    var convert = Object.entries(obj)
+    console.log(convert);
+}
+toArray({ a: 1, b: 2 }) 
+toArray({ shrimp: 15, tots: 12 })
+toArray({})
