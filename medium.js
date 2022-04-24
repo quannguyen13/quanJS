@@ -11,11 +11,21 @@
 // }
 // sevenBoom([2, 55, 60, 97, 86])
 function sevenBoom(array) {
-    var transform = array.toString().split(",")
-    // var transform = array.toString()
-    var check = transform[0].includes("7")
+    // var transform = array.toString().split(",")
+    var transform = array.toString()
+    var check = transform.includes("7")
     console.log(transform);
-    console.log(transform[0].charAt(3));
     console.log(check);
+    if (check) { 
+        for (let i = 0; i < transform.length; i++) {
+
+            console.log(`YES!!! number: ${transform[i]} contain 7`);
+        }
+    } else {
+        console.log("NOPE!!! NO number 7 existing");
+    }
+        
+        
+    
 }
-sevenBoom([97, 68])
+sevenBoom([2, 55, 60, 97, 86])
