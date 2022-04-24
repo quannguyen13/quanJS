@@ -324,5 +324,16 @@ function joinArrayOfArrays() {
 //? arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
 
 function arrayOfMultiples(number, length){
-    sadasdsadas
+    var newArray = []
+    for (var i = number; i <= number * length; i++) {
+        if (i % number == 0 ) {
+            // console.log(i);
+            newArray.push(i)
+        }
+        
+    }
+    console.log(newArray);
 }
+arrayOfMultiples(7, 5)
+// arrayOfMultiples(12, 10)
+// arrayOfMultiples(17, 6)
