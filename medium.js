@@ -9,6 +9,8 @@ const oddishOrEvenish = function(number){
     var check = sum % 2 == 0 ? "Evenish" : "Oddish" 
     console.log(check); 
 }
+
+
 // oddishOrEvenish(4433)
 // oddishOrEvenish(55)
 // oddishOrEvenish(373)
