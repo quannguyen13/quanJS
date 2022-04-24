@@ -324,5 +324,5 @@ function joinArrayOfArrays() {
 //? arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
 
 function arrayOfMultiples(number, length){
-    
+    sadasdsadas
 }
