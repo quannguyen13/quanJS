@@ -349,9 +349,14 @@ const oddishOrEvenish = function(number){
     var split = number.toString().split("")
     var transform = split.map(e => Number(e))
     var sum = transform.reduce((a, b) => a + b, 0 )
-    var check = sum % 2 == 0 ? "Evenish": "Oddish" 
-    return check
+    var check = sum % 2 == 0 ? "Evenish" : "Oddish" 
+    console.log(check); 
 }
-var result = oddishOrEvenish(4433)
-// console.log(typeof(result));
-console.log((result));
+// oddishOrEvenish(4433)
+// oddishOrEvenish(55)
+// oddishOrEvenish(373)
+// oddishOrEvenish(43)
+
+
+
+
