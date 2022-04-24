@@ -24,8 +24,5 @@ function sevenBoom(array) {
     } else {
         console.log("NOPE!!! NO number 7 existing");
     }
-        
-        
-    
 }
 sevenBoom([2, 55, 60, 97, 86])
