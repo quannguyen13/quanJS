@@ -256,18 +256,73 @@ function add_less(str) {
 }
 // console.log(add_less("fear"));
 
+
+
+
+// Create a function that concatenates n input arrays, where n is variable.
+// Examples
+// concat([1, 2, 3], [4, 5], [6, 7]) ➞ [1, 2, 3, 4, 5, 6, 7]
+
+// concat([1], [2], [3], [4], [5], [6], [7]) ➞ [1, 2, 3, 4, 5, 6, 7]
+
+// concat([1, 2], [3, 4]) ➞ [1, 2, 3, 4]
+
+// concat([4, 4, 4, 4, 4]) ➞ [4, 4, 4, 4, 4]
+
+// ! source: https://stackoverflow.com/questions/45113915/javascript-join-arrays-of-an-array-with-concat-method-instead-of-push-method
+// CASE 1
 function concat() {
     var newArray = []
     for (let i = 0; i < arguments.length; i++) {
         newArray.push(arguments[i])
         
     }
-    // console.log(newArray);
-    for (let j = 0; j < newArray.length; j++) {
-        var result1 = newArray[j]
-        var result2 = newArray.concat(newArray[j+1])
-        console.log(result2);
-        
-    }
+    var transform = newArray.reduce((a, b) => a.concat(b))
+    console.log((transform));
 }
-concat([1, 2, 3], [4, 5], [6, 7]) 
+// concat([1, 2, 3], [4, 5], [6, 7]) 
+// concat([1], [2], [3], [4], [5], [6], [7])
+// concat([1, 2], [3, 4])
+// concat([4, 4, 4, 4, 4])
+
+
+// CASE 2
+function joinArrayOfArrays() {
+    var joined = [];
+    for (var i = 0; i < arguments.length; i++) {
+      for (var k = 0; k < arguments[i].length; k++) {
+        joined.push(arguments[i][k]);
+      }
+    } 
+    console.log(joined);
+  }
+  
+// joinArrayOfArrays([1, 4], [true, false], ['x', 'y']);
+
+
+// CASE 3
+function joinArrayOfArrays() {
+    var joined = [];
+    for (var i = 0; i < arguments.length; i++) {
+      joined = joined.concat(arguments[i]) // concat sub array
+    } 
+    return joined;
+  }
+  
+// console.log(
+//     joinArrayOfArrays([1], [2], [3], [4], [5], [6], [7])
+//   );
+
+
+//   Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
+
+// Examples
+//? arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
+
+//? arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+
+//? arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
+
+function arrayOfMultiples(number, length){
+    
+}
