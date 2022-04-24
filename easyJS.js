@@ -335,5 +335,5 @@ function arrayOfMultiples(number, length){
     console.log(newArray);
 }
 arrayOfMultiples(7, 5)
-// arrayOfMultiples(12, 10)
-// arrayOfMultiples(17, 6)
+arrayOfMultiples(12, 10)
+arrayOfMultiples(17, 6)
