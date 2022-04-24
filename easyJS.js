@@ -330,10 +330,28 @@ function arrayOfMultiples(number, length){
             // console.log(i);
             newArray.push(i)
         }
-        
     }
     console.log(newArray);
 }
-arrayOfMultiples(7, 5)
-arrayOfMultiples(12, 10)
-arrayOfMultiples(17, 6)
+// arrayOfMultiples(7, 5)
+// arrayOfMultiples(12, 10)
+// arrayOfMultiples(17, 6)
+
+
+
+// !__________________________________________
+
+// Create a function that determines whether a number is Oddish or Evenish. A number is Oddish if the sum of all of its digits is odd, and a number is Evenish if the sum of all of its digits is even. If a number is Oddish, return "Oddish". Otherwise, return "Evenish".
+
+// For example, oddishOrEvenish(121) should return "Evenish", since 1 + 2 + 1 = 4. oddishOrEvenish(41) should return "Oddish", since 4 + 1 = 5.
+
+const oddishOrEvenish = function(number){
+    var split = number.toString().split("")
+    var transform = split.map(e => Number(e))
+    var sum = transform.reduce((a, b) => a + b, 0 )
+    var check = sum % 2 == 0 ? "Evenish": "Oddish" 
+    return check
+}
+var result = oddishOrEvenish(4433)
+// console.log(typeof(result));
+console.log((result));
