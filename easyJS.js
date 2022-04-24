@@ -358,5 +358,3 @@ const oddishOrEvenish = function(number){
 // oddishOrEvenish(43)
 
 
-
-
