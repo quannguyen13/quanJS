@@ -47,6 +47,32 @@ function arrayValuesTypes(array) {
     }
     console.log(newArray);
 }
-arrayValuesTypes([1, 2, "null", []])
-arrayValuesTypes(["214", true, false, 2, 2.15, [], null])
-arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214])
+// arrayValuesTypes([1, 2, "null", []])
+// arrayValuesTypes(["214", true, false, 2, 2.15, [], null])
+// arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214])
+
+
+
+// !__________________________________________
+// An array is special if every even index contains an even number and every odd index contains an odd number. Create a function that returns true if an array is special, and false otherwise.
+
+function isSpecialArray(array) {
+    for (var i = 0; i < array.length; i++) {
+
+        if (array.indexOf(i % 2 == 0) % 2 == 0 || array.indexOf(i % 2 == 0 + 1) % 2 !== 0) {
+            // console.log(true);
+            return true
+        }  
+        if (!array.indexOf(i % 2 == 0) % 2 == 0 || !array.indexOf(i % 2 !== 0) % 2 !== 0) 
+        // else
+        {
+            return false
+        }
+        
+    }
+}
+
+// var result = isSpecialArray([4, 7, 6, 9, 2, 1, 8, 3]) 
+var result = isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3])
+// var result = isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3])
+console.log(result);
