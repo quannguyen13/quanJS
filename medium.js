@@ -30,6 +30,23 @@ function sevenBoom(array) {
         console.log("NOPE!!! NO number 7 existing");
     }
 }
-sevenBoom([1, 2, 3, 4, 5, 6, 7])
-sevenBoom([8, 6, 33, 100]) 
-sevenBoom([2, 55, 60, 97, 86])
+// sevenBoom([1, 2, 3, 4, 5, 6, 7])
+// sevenBoom([8, 6, 33, 100]) 
+// sevenBoom([2, 55, 60, 97, 86])
+
+
+
+
+// !__________________________________________
+// Create a function that takes an array and returns the types of values (data types) in a new array.
+function arrayValuesTypes(array) {
+    var newArray = []
+    for (let i = 0; i < array.length; i++) {
+        const element = typeof(array[i]);
+        newArray.push(element)
+    }
+    console.log(newArray);
+}
+arrayValuesTypes([1, 2, "null", []])
+arrayValuesTypes(["214", true, false, 2, 2.15, [], null])
+arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214])
