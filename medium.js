@@ -55,24 +55,36 @@ function arrayValuesTypes(array) {
 
 // !__________________________________________
 // An array is special if every even index contains an even number and every odd index contains an odd number. Create a function that returns true if an array is special, and false otherwise.
+//? https://stackoverflow.com/questions/68850123/special-array-an-array-is-special-if-every-even-index-contains-an-even-number-a
+// function isSpecialArray(arr) {
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== i % 2) return false;
+//   }
+//   return true;
+// }
 
-function isSpecialArray(array) {
-    for (var i = 0; i < array.length; i++) {
-
-        if (array.indexOf(i % 2 == 0) % 2 == 0 || array.indexOf(i % 2 == 0 + 1) % 2 !== 0) {
-            // console.log(true);
-            return true
-        }  
-        if (!array.indexOf(i % 2 == 0) % 2 == 0 || !array.indexOf(i % 2 !== 0) % 2 !== 0) 
-        // else
-        {
-            return false
-        }
-        
+// function isSpecialArray(arr) {
+//     for(i=0; i<arr.length; i++){
+//         if(!((i%2==0 && arr[i]%2==0) || (i%2==1 && arr[i]%2==1))) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+function isSpecial(element, index) {
+    if(index%2 == 0) {
+        return element%2 == 0
+    }
+    else {
+        return element%2 != 0
     }
 }
-
-// var result = isSpecialArray([4, 7, 6, 9, 2, 1, 8, 3]) 
-var result = isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3])
-// var result = isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3])
-console.log(result);
+function isSpecialArray(arr) {
+    return arr.every(isSpecial);
+}
+var result1 = isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3])
+var result2 = isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3])
+var result3 = isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3])
+// console.log(result1);
+// console.log(result2);
+// console.log(result3);
