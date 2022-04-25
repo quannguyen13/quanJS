@@ -88,3 +88,25 @@ var result3 = isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3])
 // console.log(result1);
 // console.log(result2);
 // console.log(result3);
+
+
+// !__________________________________________
+// Create a function that takes an array of integers, sums the even and odd numbers separately, then returns the difference between the sum of the even and odd numbers.
+
+function warOfNumbers(array) {
+    var even = array.filter(e => e % 2 == 0)
+    var sumEven = even.reduce((a, b) => a + b , 0)
+    // console.log(sumEven);
+    var odd = array.filter(e => e % 2 == 1)
+    var sumOdd = odd.reduce((a, b) => a + b , 0)
+    // console.log(sumOdd);
+    if (sumEven > sumOdd) {
+        return sumEven - sumOdd
+    } else {
+        return sumOdd - sumEven
+    }
+}
+
+console.log(warOfNumbers([2, 8, 7, 5]));
+console.log(warOfNumbers([12, 90, 75]));
+console.log(warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]));
