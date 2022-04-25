@@ -107,6 +107,16 @@ function warOfNumbers(array) {
     }
 }
 
-console.log(warOfNumbers([2, 8, 7, 5]));
-console.log(warOfNumbers([12, 90, 75]));
-console.log(warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]));
+// console.log(warOfNumbers([2, 8, 7, 5]));
+// console.log(warOfNumbers([12, 90, 75]));
+// console.log(warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]));
+
+
+// ? https://stackoverflow.com/questions/61711815/function-that-transforms-a-string-of-upvote-counts-into-an-array-of-numbers-in-j
+function transformUpvotes(upvotes) {
+    return upvotes.split(" ").map(x => {
+      parsed = parseFloat(x);
+      return x.endsWith("k") ? parsed * 1000 : parsed;
+    });
+  }
+// console.log(transformUpvotes("20.3k 3.8k 7.7k 992"))
