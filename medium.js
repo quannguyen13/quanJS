@@ -120,3 +120,19 @@ function transformUpvotes(upvotes) {
     });
   }
 // console.log(transformUpvotes("20.3k 3.8k 7.7k 992"))
+
+
+function combinations() {
+    var newArray = []
+    for (let i = 0; i < arguments.length; i++) {
+        newArray.push(arguments[i]);
+        
+    }
+    console.log(newArray);
+    var combine = newArray.reduce((a, b) => a * b , 1)
+    console.log(combine);
+}
+
+combinations(2, 3, 4, 5)
+combinations(3, 7, 4)
+combinations(2, 3)
