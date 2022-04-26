@@ -122,6 +122,8 @@ function transformUpvotes(upvotes) {
 // console.log(transformUpvotes("20.3k 3.8k 7.7k 992"))
 
 
+
+// Multiply every single one element in array
 function combinations() {
     var newArray = []
     for (let i = 0; i < arguments.length; i++) {
@@ -133,6 +135,38 @@ function combinations() {
     console.log(combine);
 }
 
-combinations(2, 3, 4, 5)
-combinations(3, 7, 4)
-combinations(2, 3)
+// combinations(2, 3, 4, 5)
+// combinations(3, 7, 4)
+// combinations(2, 3)
+
+
+
+// Create a function that returns true if there's at least one prime number in the given range (n1 to n2 (inclusive)), false otherwise.
+
+function primeInRange(a, b) {
+    for (let i = a; i <= b; i++) {
+        // let flag = 0
+        for (let j = 2; j < i; j++) {
+            if (i % j == 0) {
+                return false
+                // flag = 1
+                // break
+            }
+            else {
+                return true
+            }
+            
+        }
+        // if (i > 1 && flag == 0) {
+        //     // return `yes there prime: ${i}`
+        //     console.log(`yes there prime: ${i}`);
+        // }
+
+    }
+}
+console.log(primeInRange(10, 15));
+console.log(primeInRange(62, 66));
+console.log(primeInRange(3, 5))
+
+// ? https://edabit.com/challenge/mLLqf6apACKBLF3Pe
+// ? https://stackoverflow.com/questions/68782156/how-to-find-the-amount-of-prime-numbers-in-a-range-of-numbers
