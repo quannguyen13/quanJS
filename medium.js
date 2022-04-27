@@ -219,6 +219,24 @@ function backToHome(str) {
     convert[convert.length - 1] == convert[convert.length - 2] ? console.log(true): console.log(false)
 }
 
-backToHome("NEWE")
-backToHome("NENESSWW")
-backToHome("NEESSW")
+// backToHome("NEWE")
+// backToHome("NENESSWW")
+// backToHome("NEESSW")
+
+
+
+
+// !__________________________________________
+
+function weeklySalary(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (i % 2 == 0) {
+            const element = array[i];
+            console.log(element);
+        }
+
+    }
+}
+weeklySalary([8, 82, 18, 84, 38, 0, 0])
+
+// weeklySalary([10, 10, 10, 0, 8, 0, 0])
