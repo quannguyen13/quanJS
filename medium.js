@@ -164,9 +164,61 @@ function primeInRange(a, b) {
 
     }
 }
-console.log(primeInRange(10, 15));
-console.log(primeInRange(62, 66));
-console.log(primeInRange(3, 5))
+// console.log(primeInRange(10, 15));
+// console.log(primeInRange(62, 66));
+// console.log(primeInRange(3, 5))
 
 // ? https://edabit.com/challenge/mLLqf6apACKBLF3Pe
 // ? https://stackoverflow.com/questions/68782156/how-to-find-the-amount-of-prime-numbers-in-a-range-of-numbers
+
+
+
+// !__________________________________________
+
+function sortIt(array) {
+    var str = array.toString().split(",")
+    var num = str.map(e => Number(e))
+    console.log(str);
+    console.log(num.sort());
+
+
+}
+// sortIt([[4], [1], [3]])
+// sortIt([[3, 3.1], 4, [2], [5, 7], 1, [6, 9, 8]])
+
+
+// !__________________________________________
+
+function clone(array){
+    var clone = array.concat([array])
+    console.log(clone);
+}
+// clone([1, 1])
+// clone([1, 2, 3])
+// clone(["x", "y"])
+
+
+// !__________________________________________
+
+function secondLargest(array) {
+    var max = array.sort((a, b) => b - a)[1];
+    console.log(max);
+}
+
+// secondLargest([10, 40, 30, 20, 50])
+
+
+
+
+// !__________________________________________
+
+
+function backToHome(str) {
+    var convert = str.split("")
+    console.log(convert);
+    convert[convert.length - 1] == convert[convert.length - 2] ? console.log(true): console.log(false)
+}
+
+backToHome("NEWE")
+backToHome("NENESSWW")
+backToHome("NEESSW")
