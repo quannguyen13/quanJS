@@ -1,6 +1,8 @@
 function weeklySalary(array) {
     var regularHours = []
     var overTime = []
+    var basePay = 10
+    var otPay = basePay * 1.5
     for (let i = 0; i < array.length - 2; i++) {
         if (array[i] > 8 ){
             overTime.push(array[i] - 8)
@@ -25,8 +27,8 @@ function weeklySalary(array) {
     }
     console.log(regularHours);
     console.log(overTime);
-    var regH = regularH * 10
-    var payOT = oT * 15
+    var regH = regularH * basePay
+    var payOT = oT * otPay
     console.log(`reg: ${regularH} hours, weekly OT: ${oT} hours, SAT: ${sat} hours`);
     console.log(`your pay: $${regH + payOT}, reg: $${regH}, OT: $${payOT}`);
 
@@ -34,8 +36,8 @@ function weeklySalary(array) {
 
 
 
-weeklySalary([8, 8, 8, 8, 8, 0, 0])
-weeklySalary([8, 8, 8, 8, 8, 5, 0])
-weeklySalary([10, 10, 10, 10, 10, 5, 0])
-weeklySalary([8, 10, 9, 9, 8, 5, 0])
+// weeklySalary([8, 8, 8, 8, 8, 0, 0])
+// weeklySalary([8, 8, 8, 8, 8, 5, 0])
+// weeklySalary([10, 10, 10, 10, 10, 5, 0])
+// weeklySalary([8, 10, 9, 9, 8, 5, 0])
 weeklySalary([12, 6, 5, 9, 4, 5, 0])
