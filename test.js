@@ -17,8 +17,7 @@ function sevenBoom(array) {
 // sevenBoom([8, 6, 33, 100]) 
 // sevenBoom([2, 55, 60, 97, 86])
 
-function change(array){
-    var a = array.map(e => e === 8 ? 10 : e)
-    console.log(a);
-}
-change([8, 8, 8, 8, 8, 0, 0])
+// import 'core-js/features/array/at'
+var array = [8, 8, 8, 8, 8, 10, 11]
+let index = -2
+console.log(array.indexOf(5));
