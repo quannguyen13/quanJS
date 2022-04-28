@@ -15,4 +15,10 @@ function sevenBoom(array) {
 }
 // sevenBoom([1, 2, 3, 4, 5, 6, 7])
 // sevenBoom([8, 6, 33, 100]) 
-sevenBoom([2, 55, 60, 97, 86])
+// sevenBoom([2, 55, 60, 97, 86])
+
+function change(array){
+    var a = array.map(e => e === 8 ? 10 : e)
+    console.log(a);
+}
+change([8, 8, 8, 8, 8, 0, 0])
