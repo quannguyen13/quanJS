@@ -34,8 +34,8 @@ function weeklySalary(array) {
 
 
 
-// weeklySalary([8, 8, 8, 8, 8, 0, 0])
-// weeklySalary([8, 8, 8, 8, 8, 5, 0])
-// weeklySalary([10, 10, 10, 10, 10, 5, 0])
-// weeklySalary([8, 10, 9, 9, 8, 5, 0])
+weeklySalary([8, 8, 8, 8, 8, 0, 0])
+weeklySalary([8, 8, 8, 8, 8, 5, 0])
+weeklySalary([10, 10, 10, 10, 10, 5, 0])
+weeklySalary([8, 10, 9, 9, 8, 5, 0])
 weeklySalary([12, 6, 5, 9, 4, 5, 0])
