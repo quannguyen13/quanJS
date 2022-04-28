@@ -228,15 +228,18 @@ function backToHome(str) {
 
 // !__________________________________________
 
-function weeklySalary(array) {
-    for (let i = 0; i < array.length; i++) {
-        if (i % 2 == 0) {
-            const element = array[i];
-            console.log(element);
-        }
-
+function sumDigProd() {
+    var array = []
+    for (let i = 0; i < arguments.length; i++) {
+        array.push(arguments[i])
+        
     }
+    console.log(array);
+    var convert1 = array.reduce((a, b) => a + b, 0).toString().split("").map(e => Number(e))
+    var multiply1 = convert1.reduce((a, b) => a * b, 1).toString().split("").map(e => Number(e))
+    var final = multiply1.reduce((a, b) => a * b, 1)
+    console.log(final);
 }
-weeklySalary([8, 82, 18, 84, 38, 0, 0])
 
-// weeklySalary([10, 10, 10, 0, 8, 0, 0])
+sumDigProd(16, 28)
+sumDigProd(1, 2, 3, 4, 5, 6)
