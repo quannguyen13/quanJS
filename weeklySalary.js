@@ -27,5 +27,6 @@ function weeklySalary(array) {
 
 
 
-weeklySalary([10, 10, 10, 10, 10, 0, 0])
 // weeklySalary([8, 8, 8, 8, 8, 0, 0])
+// weeklySalary([10, 10, 10, 10, 10, 0, 0])
+weeklySalary([10, 6, 8, 10, 9, 0, 0])
