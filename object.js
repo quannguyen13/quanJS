@@ -16,7 +16,10 @@ const vacation = {
   tripStart: "May 15",
   tripEnd: "June 11",
   purchasedTickets: false,
-  "air-plane": false
+  air_plane: {
+        name: "Boeing",
+        fullPlane: false
+  }
 
 }
 //  dot notation
@@ -64,7 +67,11 @@ delete car.smellQualify
 
 
 // loop thru Object
-for (key in car) {
-  console.log("keys:", key, ", values:", car[key]);
+for (i in car) {
+  // console.log("keys:", i, ", values:", car[i]);
 }
 
+// console.log(Object.keys(car));
+// console.log(Object.values(car));
+// console.log(Object.entries(car));
+// console.log(Object.entries(vacation.air_plane));
