@@ -97,3 +97,5 @@ if (person["pets"]) {
 
 delete person["pets"]
 // console.log(person);
+
+// ? https://git.generalassemb.ly/flex-323/js-objects-and-context
