@@ -20,8 +20,9 @@ const vacation = {
 }
 //  dot notation
 console.log(vacation.where);
+console.log(vacation["purchasedTickets"]);
 // bracket notation
-console.log(vacation["where"]);
+// console.log(vacation["where"]);
 
 
 // 
@@ -29,5 +30,10 @@ function getProp(propName){
   console.log(vacation[propName]);
  
 }
-getProp("tripStart")
-// getProp(where)
+// getProp("tripStart")
+// getProp("purchasedTickets")
+
+vacation.where = "Tokyo"
+vacation["purchasedTickets"] = true
+console.log(vacation.where);
+console.log(vacation["purchasedTickets"]);
