@@ -3,7 +3,12 @@ const car = {
     model: 'Civic',
     year: 1997,
     'tire-type': 'Goodyear',
-  
+    drive: function(){
+      console.log("vroom vroom");
+    },
+    gps: function (location) {
+      console.log(`Beep boop, driving to ${location}`);
+    }
   };
 
 // console.log(car.make);
@@ -57,6 +62,8 @@ car.edition = "limited"
 car.available = true
 car.offered = false
 car.smellQualify = false
+car.drive()
+car.gps("sixFlags")
 // console.log( car )
 
 
@@ -89,14 +96,14 @@ person["pets"] = ""
 
 if (person["pets"]) {
   
-  console.log(`my name is ${person.firstName} ${person.lastName} and i used to have a dog name ${person.pets}`);
+  // console.log(`my name is ${person.firstName} ${person.lastName} and i used to have a dog name ${person.pets}`);
 } else {
-  console.log(`my name is ${person.firstName} ${person.lastName} and i have NO pet`);
+  // console.log(`my name is ${person.firstName} ${person.lastName} and i have NO pet`);
   
 }
 
 delete person["pets"]
-console.log(person);
+// console.log(person);
 
 
 
