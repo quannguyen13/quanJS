@@ -3,12 +3,17 @@ function getVoteCount(votes) {
   console.log(result)
 	};
 
-getVoteCount({ upvotes: 13, downvotes: 0 })
-getVoteCount({ upvotes: 2, downvotes: 33 })
-getVoteCount({ upvotes: 132, downvotes: 132 })
+// getVoteCount({ upvotes: 13, downvotes: 0 })
+// getVoteCount({ upvotes: 2, downvotes: 33 })
+// getVoteCount({ upvotes: 132, downvotes: 132 })
 
 // ? https://onecompiler.com/javascript/3wtyywvyv
 
+
+
+
+
+// Luke Skywalker has family and friends. Help him remind them who is who. Given a string with a name, return the relation of that person to Luke.
 const relateToLuke = [
     {
         person: "Darth Vader",
