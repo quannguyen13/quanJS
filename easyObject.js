@@ -50,7 +50,7 @@ function relationToLuke(str) {
     var found = search.map(ele=>ele.relation)
     console.log(`Luke, i am ${str}, your ${found} `);
 }
-relationToLuke("Leia")
-relationToLuke("Obiwan Ken Obi")
-relationToLuke("Han Solo")
-relationToLuke("Darth Vader")
+// relationToLuke("Leia")
+// relationToLuke("Obiwan Ken Obi")
+// relationToLuke("Han Solo")
+// relationToLuke("Darth Vader")
