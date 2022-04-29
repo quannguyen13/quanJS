@@ -75,3 +75,25 @@ for (i in car) {
 // console.log(Object.values(car));
 // console.log(Object.entries(car));
 // console.log(Object.entries(vacation.air_plane));
+
+
+const person = {
+  firstName: "",
+  lastName: ""
+}
+
+
+person.firstName = "Quan"
+person.lastName = "Nguyen"
+person["pets"] = ""
+
+if (person["pets"]) {
+  
+  console.log(`my name is ${person.firstName} ${person.lastName} and i used to have a dog name ${person.pets}`);
+} else {
+  console.log(`my name is ${person.firstName} ${person.lastName} and i have NO pet`);
+  
+}
+
+delete person["pets"]
+// console.log(person);
