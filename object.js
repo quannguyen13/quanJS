@@ -9,6 +9,7 @@ const car = {
 // console.log(car.make);
 // console.log( car['make'] )
 // console.log( car["tire-type"] )
+// console.log( car )
 
 const vacation = {
   where: "Viet Nam",
@@ -19,8 +20,8 @@ const vacation = {
 
 }
 //  dot notation
-console.log(vacation.where);
-console.log(vacation["purchasedTickets"]);
+// console.log(vacation.where);
+// console.log(vacation["purchasedTickets"]);
 // bracket notation
 // console.log(vacation["where"]);
 
@@ -33,7 +34,37 @@ function getProp(propName){
 // getProp("tripStart")
 // getProp("purchasedTickets")
 
+//? update object
+
+
 vacation.where = "Tokyo"
 vacation["purchasedTickets"] = true
-console.log(vacation.where);
-console.log(vacation["purchasedTickets"]);
+// console.log(vacation.where);
+// console.log(vacation.purchasedTickets);
+
+
+//? update object
+
+car["tire-type"] = "Toyo"
+car.make = "Toyota"
+car.year = 2022
+car.model = "Tundra"
+car.seatS = "Leather"
+car.edition = "limited"
+car.available = true
+car.offered = false
+car.smellQualify = false
+// console.log( car )
+
+
+// ! Delete
+delete car.smellQualify
+// console.log( car )
+
+
+
+// loop thru Object
+for (key in car) {
+  console.log("keys:", key, ", values:", car[key]);
+}
+
