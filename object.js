@@ -3,11 +3,22 @@ const car = {
     model: 'Civic',
     year: 1997,
     'tire-type': 'Goodyear',
+    //  add function in object
     drive: function(){
-      console.log("vroom vroom");
+      // console.log("vroom vroom");
+      console.log(`${this.make} ${this.model} vroom vroom`);
     },
     gps: function (location) {
       console.log(`Beep boop, driving to ${location}`);
+    },
+    sayHi(){
+      console.log("Hi");
+    },
+    sayHello: () => {
+      console.log("Hello");
+    },
+    getThis(){
+      console.log(this);
     }
   };
 
@@ -63,7 +74,10 @@ car.available = true
 car.offered = false
 car.smellQualify = false
 car.drive()
-car.gps("sixFlags")
+// car.gps("sixFlags")
+// car.sayHi()
+// car.sayHello()
+car.getThis()
 // console.log( car )
 
 

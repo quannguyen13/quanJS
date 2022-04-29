@@ -5,4 +5,7 @@ function isAvowel(text) {
     console.log(check);
 }
 
-isAvowel("s")
+// isAvowel("s")
+
+var array = [1, 2, 3, 4, 5, 6, 7, 8]
+console.log(array.at(1));
