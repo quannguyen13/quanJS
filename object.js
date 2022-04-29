@@ -96,7 +96,7 @@ if (person["pets"]) {
 }
 
 delete person["pets"]
-// console.log(person);
+console.log(person);
 
 
 
