@@ -1,3 +1,6 @@
+const sayHi = () => {
+  console.log(`say Hi from sayHi()`, this);
+}
 const car = {
     make: 'Honda',
     model: 'Civic',
@@ -5,15 +8,17 @@ const car = {
     'tire-type': 'Goodyear',
     //  add function in object
     drive: function(){
+      sayHi()
       // console.log("vroom vroom");
+      console.log("this from dirive function", this);
       console.log(`${this.make} ${this.model} vroom vroom`);
     },
     gps: function (location) {
       console.log(`Beep boop, driving to ${location}`);
     },
-    sayHi(){
-      console.log("Hi");
-    },
+    // sayHi(){
+    //   console.log("Hi");
+    // },
     sayHello: () => {
       console.log("Hello");
     },
@@ -77,7 +82,7 @@ car.drive()
 // car.gps("sixFlags")
 // car.sayHi()
 // car.sayHello()
-car.getThis()
+// car.getThis()
 // console.log( car )
 
 
