@@ -401,7 +401,7 @@ function evenOddPartition(array) {
     console.log([even, odd]);
 }
 
-evenOddPartition([5, 8, 9, 2, 0])
-evenOddPartition([1, 0, 1, 0, 1, 0])
-evenOddPartition([1, 3, 5, 7, 9])
-evenOddPartition([])
+// evenOddPartition([5, 8, 9, 2, 0])
+// evenOddPartition([1, 0, 1, 0, 1, 0])
+// evenOddPartition([1, 3, 5, 7, 9])
+// evenOddPartition([])
