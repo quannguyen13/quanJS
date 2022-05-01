@@ -30,8 +30,14 @@ const car = {
     }
   };
 
+
+  // ? BIND function
 var result = sayHi.bind(car)
 // console.log(result());
+
+// ?
+
+
 // console.log(car.make);
 // console.log( car['make'] )
 // console.log( car["tire-type"] )
@@ -177,6 +183,12 @@ const user = {
 
 // user.signOut();
 // console.log("POST sign out", user.isSignedIn);
+
+
+
+
+
+// ? CAll function
 function sayHello1() {
   console.log(`Hi! My name is ${this.name}`);
 }
