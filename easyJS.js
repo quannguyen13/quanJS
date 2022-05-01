@@ -364,3 +364,44 @@ function existsHigher() {
 // existsHigher([5, 3, 15, 22, 4], 10)
 // existsHigher([4, 3, 3, 3, 2, 2, 2], 4)
 // existsHigher([1, 2, 3, 4, 5], 8)
+
+
+
+// !__________________________________________
+
+
+function oddSum(array) {
+    for (let i = 0; i < array.length; i++) {
+        if ((array[i] + array[i+1]) % 2 == 0 ) {
+            console.log(true);
+        } else {
+            console.log(false);
+        }
+        
+    }
+
+}
+
+// oddSum([11, 15, 6, 8, 9, 10])
+// oddSum([12, 21, 5, 9, 65, 32])
+// oddSum([1, 2, 3, 4, 5, 6])
+
+
+function evenOddPartition(array) {
+    var even = []
+    var odd = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 == 0 ) {
+            even.push(array[i])
+        } else {
+            odd.push(array[i])
+        }
+        
+    }
+    console.log([even, odd]);
+}
+
+evenOddPartition([5, 8, 9, 2, 0])
+evenOddPartition([1, 0, 1, 0, 1, 0])
+evenOddPartition([1, 3, 5, 7, 9])
+evenOddPartition([])
