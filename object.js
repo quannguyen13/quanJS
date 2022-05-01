@@ -149,12 +149,15 @@ delete person["pets"]
 
 
 const user = {
-  userName: 'numbr1rawkr',
+  userName: 'christensen',
   password: 'password1234',
   isSignedIn: false,
   signIn: function(pwd, userAccount) {
-    if (pwd === this.password || userAccount === this.userName ) {
+    if (pwd === this.password && userAccount === this.userName ) {
+      console.log(`Welcome, user: ${this.userName}`);
       this.isSignedIn = true;
+    } else {
+      console.log("Nah");
     }
   },
   signOut: function() {
@@ -162,8 +165,8 @@ const user = {
   },
 };
 console.log("Before sign in", user.isSignedIn);
-// user.signIn('numbr1rawkr')
-user.signIn('password1234')
+user.signIn('tacobeelll', 'christensen' )
+// user.signIn('password1234', 'christensen' )
 
 console.log("POST sign in", user.isSignedIn);
 
