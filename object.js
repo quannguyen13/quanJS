@@ -78,7 +78,7 @@ car.edition = "limited"
 car.available = true
 car.offered = false
 car.smellQualify = false
-car.drive()
+// car.drive()
 // car.gps("sixFlags")
 // car.sayHi()
 // car.sayHello()
@@ -127,3 +127,22 @@ delete person["pets"]
 
 
 // ? https://git.generalassemb.ly/flex-323/js-objects-and-context
+
+
+
+// this keywords
+const user = {
+  fullName: 'James Reichard',
+  favoriteFood: 'Rice pudding',
+  sayName: function () {
+    console.log(`My name is ${this.fullName}.`);
+  },
+  sayHello: function () {
+    console.log(this);
+    console.log(
+      `Hi my name is ${this.fullName} and my favorite food is ${this.favoriteFood}.`
+    );
+  },
+};
+
+user.sayHello();
