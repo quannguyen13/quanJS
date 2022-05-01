@@ -188,22 +188,3 @@ const user = {
 
 
 
-// ? CAll function
-function sayHello1() {
-  console.log(`Hi! My name is ${this.name}`);
-}
-
-const person1 = { name: 'Manatee the Railyard Toreador' };
-const cat1 = { name: 'Hobbles McGillicudy' };
-sayHello1.call(person1);
-sayHello1.call(cat1);
-// call also lets us pass in the arguments to the function:
-
-function sayHello2(favColor) {
-  console.log(`Hi! My name is ${this.name} and I like ${favColor}`);
-}
-
-const person2 = { name: 'Manatee the Railyard Toreador' };
-const cat2 = { name: 'Hobbles McGillicudy' };
-sayHello2.call(person2, 'blue');
-sayHello2.call(cat2, 'peachpuff');

@@ -42,17 +42,22 @@ ship.missions = {}
 // console.log(`new missons: ${ship.missions} `);
 
 // How do we add "smuggled cargo" to the missions with 'prisoners', 'stolen goods', 'unobtanium' as a value?
-ship.missions = ['prisoners', 'stolen goods', 'unobtanium']
+ship.missions["smuggled cargo"] = ['prisoners', 'stolen goods', 'unobtanium']
+
+// What code deletes the speed property?
+delete ship.speed
 // What's difference between a property and a method?
 // How can I view all of an object's properties?
+Object.keys(ship)
 // What is the keyword which references the context of a function/method?
+this
 // What is the default context for a function in the browser?
 
 
 
 // ship.getThis()
 
-
+//  BIND function
 const user = {
   name: 'James Reichard',
   favoriteFoods: ['Ramen', "Cap'n Crunch", 'Tacos'],
@@ -66,3 +71,26 @@ const user = {
 };
 
 user.displayFoods();
+
+
+
+
+// ? CAll function
+function sayHello1() {
+  console.log(`Hi! My name is ${this.name}`);
+}
+
+const person1 = { name: 'Manatee the Railyard Toreador' };
+const cat1 = { name: 'Hobbles McGillicudy' };
+sayHello1.call(person1);
+sayHello1.call(cat1);
+// call also lets us pass in the arguments to the function:
+
+function sayHello2(favColor) {
+  console.log(`Hi! My name is ${this.name} and I like ${favColor}`);
+}
+
+const person2 = { name: 'Manatee the Railyard Toreador' };
+const cat2 = { name: 'Hobbles McGillicudy' };
+sayHello2.call(person2, 'blue');
+sayHello2.call(cat2, 'peachpuff');
