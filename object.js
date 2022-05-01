@@ -131,18 +131,41 @@ delete person["pets"]
 
 
 // this keywords
+// const user = {
+//   fullName: 'James Reichard',
+//   favoriteFood: 'Rice pudding',
+//   sayName: function () {
+//     console.log(`My name is ${this.fullName}.`);
+//   },
+//   sayHello: function () {
+//     console.log(this);
+//     console.log(
+//       `Hi my name is ${this.fullName} and my favorite food is ${this.favoriteFood}.`
+//     );
+//   },
+// };
+
+// user.sayHello();
+
+
 const user = {
-  fullName: 'James Reichard',
-  favoriteFood: 'Rice pudding',
-  sayName: function () {
-    console.log(`My name is ${this.fullName}.`);
+  userName: 'numbr1rawkr',
+  password: 'password1234',
+  isSignedIn: false,
+  signIn: function(pwd, userAccount) {
+    if (pwd === this.password || userAccount === this.userName ) {
+      this.isSignedIn = true;
+    }
   },
-  sayHello: function () {
-    console.log(this);
-    console.log(
-      `Hi my name is ${this.fullName} and my favorite food is ${this.favoriteFood}.`
-    );
+  signOut: function() {
+    this.isSignedIn = false;
   },
 };
+console.log("Before sign in", user.isSignedIn);
+// user.signIn('numbr1rawkr')
+user.signIn('password1234')
 
-user.sayHello();
+console.log("POST sign in", user.isSignedIn);
+
+user.signOut();
+console.log("POST sign out", user.isSignedIn);
