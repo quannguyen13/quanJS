@@ -177,6 +177,11 @@ function freeShipping(obj){
 // freeShipping({ "Flatscreen TV": 399.99 })
 // freeShipping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 })
 
+
+
+
+// write a function to calculate distance to 2 points
+// ? https://edabit.com/challenge/caeSeQ3K53GMQKenX
 function getDistance(){
     var array = []
     for (let i = 0; i < arguments.length; i++) {
