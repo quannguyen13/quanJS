@@ -213,6 +213,6 @@ function mirror(array){
     var newArray = array.concat(sort)
     console.log(newArray);
 }
-mirror([0, 2, 4, 6])
-mirror([1, 2, 3, 4, 5])
-mirror([3, 5, 6, 7, 8])
+// mirror([0, 2, 4, 6])
+// mirror([1, 2, 3, 4, 5])
+// mirror([3, 5, 6, 7, 8])
