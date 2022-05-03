@@ -239,7 +239,22 @@ function testJackpot(array) {
     var check = array.every(e => e == array[0])
     console.log(check);
 }
-testJackpot(["&&", "&", "&&&", "&&&&"])
-testJackpot(["@", "@", "@", "@"])
-testJackpot(["SS", "SS", "SS", "Ss"])
-testJackpot(["abc", "abc", "abc", "abc"])
+// testJackpot(["&&", "&", "&&&", "&&&&"])
+// testJackpot(["@", "@", "@", "@"])
+// testJackpot(["SS", "SS", "SS", "Ss"])
+// testJackpot(["abc", "abc", "abc", "abc"])
+
+function factorize(number) {
+    var array = []
+    for (let i = 0; i <= number; i++) {
+        if (number % i == 0) {
+            array.push(i)
+        }
+        
+    }
+    console.log(array);
+}
+
+// factorize(12)
+// factorize(4)
+// factorize(17)
