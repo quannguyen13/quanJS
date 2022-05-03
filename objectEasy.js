@@ -182,6 +182,7 @@ function freeShipping(obj){
 
 // write a function to calculate distance to 2 points
 // ? https://edabit.com/challenge/caeSeQ3K53GMQKenX
+//  ? https://www.w3resource.com/javascript-exercises/javascript-math-exercise-35.php
 function getDistance(){
     var array = []
     for (let i = 0; i < arguments.length; i++) {
@@ -196,6 +197,22 @@ function getDistance(){
     // console.log(b);
     console.log(distance.toFixed(3));
 }
-getDistance({x: -2, y: 1}, {x: 4, y: 3})
-getDistance({x: 0, y: 0}, {x: 1, y: 1})
-getDistance({x: 10, y: -5}, {x: 8, y: 16})
+// getDistance({x: -2, y: 1}, {x: 4, y: 3})
+// getDistance({x: 0, y: 0}, {x: 1, y: 1})
+// getDistance({x: 10, y: -5}, {x: 8, y: 16})
+
+
+function mirror(array){
+    var arrayClone = []
+    for (i = 0; i < array.length; i++) {
+        arrayClone[i] = array[i];
+      }
+    // console.log(arrayClone);
+    var sort = arrayClone.sort((a, b) => b - a).slice(1)
+    // console.log(sort)
+    var newArray = array.concat(sort)
+    console.log(newArray);
+}
+mirror([0, 2, 4, 6])
+mirror([1, 2, 3, 4, 5])
+mirror([3, 5, 6, 7, 8])
