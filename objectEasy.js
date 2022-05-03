@@ -258,3 +258,21 @@ function factorize(number) {
 // factorize(12)
 // factorize(4)
 // factorize(17)
+
+var string = "Some string";
+var str_A = "MZNHUVIOEPTWFJCBXKALSDQGYR"
+var str_Z = "YFTUCSQOMGKPXNDWHIVJRABZEL"
+var arrayA = []
+var arrayB = []
+for (var i = 0; i < str_A.length; i++) {
+  arrayA.push(str_A.charCodeAt(i));
+}
+console.log(arrayA)
+for (var j = 0; j < str_Z.length; j++) {
+    arrayB.push(str_Z.charCodeAt(j));
+}
+console.log(arrayB)
+
+// ? https://edabit.com/challenge/yvCfLsJiAC8xXn7oP
+// ? https://stackoverflow.com/questions/94037/convert-character-to-ascii-code-in-javascript
+// ? https://stackoverflow.com/questions/10879244/how-to-get-the-ascii-value-in-javascript-for-the-characters
