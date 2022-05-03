@@ -178,13 +178,19 @@ function freeShipping(obj){
 // freeShipping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 })
 
 function getDistance(){
-        var array = []
+    var array = []
     for (let i = 0; i < arguments.length; i++) {
         array.push(arguments[i]);
 
 }
     console.log(array);
-    var a = array.map(e => e == e.x)
-    console.log(a);
+    var a = array.map(e => e.x).reduce((n,m) => m - n, 0)
+    var b = array.map(e => e.y).reduce((n,m) => m - n, 0)
+    var distance = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+    // console.log(a);
+    // console.log(b);
+    console.log(distance.toFixed(3));
 }
 getDistance({x: -2, y: 1}, {x: 4, y: 3})
+getDistance({x: 0, y: 0}, {x: 1, y: 1})
+getDistance({x: 10, y: -5}, {x: 8, y: 16})
