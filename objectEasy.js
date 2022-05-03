@@ -232,4 +232,14 @@ function mirror(array){
     console.log(result);
 }
 
-mirror(["abcdef10gh", "234ab567cd", "efgh890", "xyz987ijk"])
+// mirror(["abcdef10gh", "234ab567cd", "efgh890", "xyz987ijk"])
+
+
+function testJackpot(array) {
+    var check = array.every(e => e == array[0])
+    console.log(check);
+}
+testJackpot(["&&", "&", "&&&", "&&&&"])
+testJackpot(["@", "@", "@", "@"])
+testJackpot(["SS", "SS", "SS", "Ss"])
+testJackpot(["abc", "abc", "abc", "abc"])
