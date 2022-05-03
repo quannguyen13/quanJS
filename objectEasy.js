@@ -201,18 +201,35 @@ function getDistance(){
 // getDistance({x: 0, y: 0}, {x: 1, y: 1})
 // getDistance({x: 10, y: -5}, {x: 8, y: 16})
 
-
+// write a function to mirror given array
 function mirror(array){
     var arrayClone = []
     for (i = 0; i < array.length; i++) {
         arrayClone[i] = array[i];
       }
     // console.log(arrayClone);
-    var sort = arrayClone.sort((a, b) => b - a).slice(1)
-    // console.log(sort)
-    var newArray = array.concat(sort)
+    // var sort = arrayClone.sort((a, b) => b - a).slice(1)
+    var opposite = arrayClone.reverse().slice(1)
+    console.log(opposite)
+    var newArray = array.concat(opposite)
     console.log(newArray);
 }
 // mirror([0, 2, 4, 6])
 // mirror([1, 2, 3, 4, 5])
 // mirror([3, 5, 6, 7, 8])
+
+
+// write a function to mirror given string array
+function mirror(array){
+    var arrayClone = []
+    for (i = 0; i < array.length; i++) {
+        arrayClone[i] = array[i];
+      }
+    // console.log((arrayClone));
+    var opposite = arrayClone.map(e => e.split("").reverse().join("")).reverse()
+    console.log(opposite);
+    var result = array.concat(opposite)
+    console.log(result);
+}
+
+mirror(["abcdef10gh", "234ab567cd", "efgh890", "xyz987ijk"])
