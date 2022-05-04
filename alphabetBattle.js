@@ -2,8 +2,8 @@
 
 // Case 1: convert player's string to array number with build-in method()
 var string = "Some string";
-var str_A = "MZNHUVIOEPTWFJCBXKALSDQGYR"
-var str_Z = "YFTUCSQOMGKPXNDWHIVJRABZEL"
+var str_A = "xzup!"
+var str_Z = "ejoty"
 var arrayA = []
 var arrayB = []
 for (var i = 0; i < str_A.length; i++) {
@@ -67,9 +67,9 @@ console.log(transform1);
 
 var match2 = []
 for (let k = 0; k < strZ.length; k++) {
-    for (let y = 0; y < values.length; y++) {  
-        if (strZ[k] == values[y]) {
-            var key2 = Object.keys(characters).find(key => characters[key] === values[y])
+    for (let r = 0; r < values.length; r++) {  
+        if (strZ[k] == values[r]) {
+            var key2 = Object.keys(characters).find(key => characters[key] === values[r])
             match2.push(key2)    
             
         }
@@ -77,3 +77,38 @@ for (let k = 0; k < strZ.length; k++) {
 }
 var transform2 = match2.map(e => Number(e))
 console.log(transform2);
+
+var playerA = []
+var playerZ = []
+for (let x = 0; x <= match1.length; x++) {
+        if (match1[x] < match2[x]){
+        var result2 = Math.abs(match2[x] - match1[x])
+        playerZ.push(result2)
+    
+    }
+        if (match1[x] > match2[x]) {
+            var result1 = Math.abs(match1[x] - match2[x])
+            playerA.push(result1)
+          
+        }
+
+        // if ((match2[x] = match1[x])){
+        //     var result2 = Math.abs(match2[x] - match1[x])
+        //     playerZ.push(result2)
+        
+        // }
+    
+    
+}
+console.log(playerA);
+console.log(playerZ);
+var playerAscores = playerA.reduce((a, b) => a + b, 0)
+var playerZscores = playerZ.reduce((a, b) => a + b, 0)
+if (playerAscores > playerZscores) {
+    console.log(`playerA win: ${playerAscores} scores vs playerZ: ${playerZscores} scores `);
+} else if (playerAscores < playerZscores) {
+    console.log(`playerZ win: ${playerZscores} scores vs playerA: ${playerAscores} scores`);
+    
+} else if (playerAscores = playerZscores){
+    console.log(`Draw at ${playerAscores} scores`);
+}
