@@ -9,11 +9,11 @@ var arrayB = []
 for (var i = 0; i < str_A.length; i++) {
   arrayA.push(str_A.charCodeAt(i));
 }
-// console.log(arrayA)
-// for (var j = 0; j < str_Z.length; j++) {
-//     arrayB.push(str_Z.charCodeAt(j));
-// }
-// console.log(arrayB)
+console.log(arrayA)
+for (var j = 0; j < str_Z.length; j++) {
+    arrayB.push(str_Z.charCodeAt(j));
+}
+console.log(arrayB)
 
 // ? https://edabit.com/challenge/yvCfLsJiAC8xXn7oP
 // ? https://stackoverflow.com/questions/94037/convert-character-to-ascii-code-in-javascript
