@@ -43,20 +43,37 @@ var characters = {
     "126": "~",    "127": ""
     }
 
-var str = str_A.split("")
+var strA = str_A.split("")
+var strZ = str_Z.split("")
 var values = Object.values(characters)
-    // console.log(str);
+    // console.log(strA);
+    // console.log(strZ);
     // console.log(values);
 // ? find object relate to matched values:
 // ? https://www.codegrepper.com/code-examples/javascript/javascript+search+object.keys+for+matching+value
-var match = []
-for (let i = 0; i < str.length; i++) {
-    for (let j = 0; j < values.length; j++) {
-        if (str[i] == values[j]) {
-    var key = Object.keys(characters).find(key => characters[key] === values[j])
-    match.push(key) 
+var match1 = []
+for (let i = 0; i < strA.length; i++) {
+    for (let j = 0; j < values.length; j++) {  
+        if (strA[i] == values[j]) {
+            var key1 = Object.keys(characters).find(key => characters[key] === values[j])
+            match1.push(key1)    
+            
+        }
+    }
 }
+var transform1 = match1.map(e => Number(e))
+console.log(transform1);
+
+
+var match2 = []
+for (let k = 0; k < strZ.length; k++) {
+    for (let y = 0; y < values.length; y++) {  
+        if (strZ[k] == values[y]) {
+            var key2 = Object.keys(characters).find(key => characters[key] === values[y])
+            match2.push(key2)    
+            
+        }
+    }
 }
-}
-var transform = match.map(e => Number(e))
-console.log((transform));
+var transform2 = match2.map(e => Number(e))
+console.log(transform2);
