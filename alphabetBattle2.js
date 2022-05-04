@@ -36,11 +36,11 @@ for (let x = 0; x <= arrayA.length; x++) {
           
         }
 
-        if ((arrayB[x] = arrayA[x])){
-            var result2 = Math.abs(arrayB[x] - arrayA[x])
-            playerZ.push(result2)
+        // if ((arrayB[x] = arrayA[x])){
+        //     var result2 = Math.abs(arrayB[x] - arrayA[x])
+        //     playerZ.push(result2)
         
-        }
+        // }
     
     
 }
