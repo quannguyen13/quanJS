@@ -19,6 +19,9 @@ console.log(arrayB)
 // ? https://stackoverflow.com/questions/94037/convert-character-to-ascii-code-in-javascript
 // ? https://stackoverflow.com/questions/10879244/how-to-get-the-ascii-value-in-javascript-for-the-characters
 
+
+
+
 var playerA = []
 var playerZ = []
 for (let x = 0; x <= arrayA.length; x++) {
