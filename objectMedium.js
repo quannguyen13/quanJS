@@ -29,3 +29,36 @@ function getTotalPrice(array) {
 //     { product: "Chocolate", quantity: 11, price: 0.10 },
 //     { product: "Lollipop", quantity: 21, price: 0.20 }
 //   ])
+
+
+
+
+// Create a function where given an array of colors cols, return how long it takes to color the whole pattern. Note the following times:
+// ? Example:
+// color_pattern_times(["Red", "Blue", "Red", "Blue", "Red"]) ➞ 14
+
+// There are 5 colors so it takes 2 seconds to color each one (2 x 5 = 10).
+// You need to switch the pencils 4 times and it takes 1 second to switch (1 x 4 = 4).
+// 10 + 4 = 14
+
+// https://edabit.com/challenge/Np7R8F24PaqBShZc5
+function colorPatternTimes(array) {
+    var switchPencilsTiming = (array.length - 1) * 1
+    var numberOfColors = 0
+    for (let i = 0; i < array.length; i++) {
+        numberOfColors = i + 1;
+    }
+    // console.log(numberOfColors);
+    var colors = numberOfColors * 2
+    var time = switchPencilsTiming + colors
+    console.log(time);
+}
+colorPatternTimes(["Red", "Yellow", "Green", "Blue"])
+colorPatternTimes(["Blue"])
+colorPatternTimes(["Blue", "Blue", "Blue", "Red", "Red", "Red"])
+
+
+
+
+
+// https://edabit.com/challenge/b7iHQDw72zzkmgCun
