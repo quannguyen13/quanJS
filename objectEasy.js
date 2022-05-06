@@ -333,3 +333,12 @@ function sort2(list) {
         console.log('Sorted object: ', sorted) 
 }
 // sort2(list)
+
+
+
+function toArray(obj) {
+    var convert = Object.entries(obj)
+    console.log(convert);
+}
+// toArray({ a: 1, b: 2 })
+// toArray({ piano: 500 }, "Brutus", 400)
