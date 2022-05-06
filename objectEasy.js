@@ -369,6 +369,27 @@ function mapping(array){
       );
     console.log(newObj);
 }
-mapping(["p", "s"])
-mapping(["a", "b", "c"])
-mapping(["a", "v", "y", "z"])
+// mapping(["p", "s"])
+// mapping(["a", "b", "c"])
+// mapping(["a", "v", "y", "z"])
+
+
+
+
+// Although the number of squares per roll of TP varies significantly, we'll assume: // ! each roll has 500 sheets, and the average person uses 57 sheets per day.
+// Create a function that will receive an object with two key/values:
+
+function tpChecker(obj){
+    var ppl = obj.people
+    var papers = obj.tp
+    var estimate = Math.floor((500 / (ppl * 57)) * papers)
+    if (estimate <= 2) {
+        console.log(`Your TP will only last ${estimate} days, buy more!`);
+    } else {
+        console.log(`Your TP will only last ${estimate} days, NO need to buy more!`);
+    }
+}
+
+tpChecker({ people: 4, tp: 1 })
+tpChecker({ people: 3, tp: 20 })
+tpChecker({ people: 4, tp: 12 })
