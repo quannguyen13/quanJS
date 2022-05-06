@@ -301,7 +301,10 @@ function sortDrinkByPrice(drinks){
     console.log(check);
 }
 // sortDrinkByPrice(drinks)
+// => printout array
 
+// SORT case1
+// => printout object
 const list = {
     "you": 100, 
     "me": 75, 
@@ -319,3 +322,14 @@ function sort(list){
 // ? source : Object.fromEntries()
 // ? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
 // sort(list)
+
+// SORT case2
+// => printout object
+function sort2(list) {
+    
+    let sorted = Object.fromEntries(
+        Object.entries(list).sort( (a,b) => a[1] - b[1] )    
+        ) 
+        console.log('Sorted object: ', sorted) 
+}
+// sort2(list)
