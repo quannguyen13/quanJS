@@ -394,3 +394,40 @@ function tpChecker(obj){
 // tpChecker({ people: 4, tp: 1 })
 // tpChecker({ people: 3, tp: 20 })
 // tpChecker({ people: 4, tp: 12 })
+
+
+// write a function to compare 2 objects 
+// ? https://dmitripavlutin.com/how-to-compare-objects-in-javascript/
+function comparison(obj1, obj2){
+    // console.log(JSON.stringify(obj1) === JSON.stringify(obj2));
+    const keys1 = Object.keys(obj1);
+    const keys2 = Object.keys(obj2);
+    if (keys1.length !== keys2.length) {
+      return false;
+    }
+    for (let key of keys1) {
+      if (obj1[key] !== obj2[key]) {
+        return false;
+      }
+    }
+    return true;
+
+}
+var obj1 = {
+    name: "Jason",
+    phone: "9853759720",
+    email: "jason@edabit.com"
+  }
+
+var obj2 = {
+  name: "Benny",
+  phone: "3325558745",
+  email: "benny@edabit.com"
+}
+
+// var obj2 = {
+//     name: "Jason",
+//     phone: "9853759720",
+//     email: "jason@edabit.com"
+//   }
+console.log(comparison(obj1, obj2));
