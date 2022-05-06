@@ -22,9 +22,9 @@ getTotalPrice([
     { product: "Bread", quantity: 22, price: 1.60 },
     { product: "Cheese", quantity: 1, price: 4.50 }
   ]) 
-getTotalPrice([
-    { product: "Milk", quantity: 3, price: 1.50 }
-  ])
+// getTotalPrice([
+//     { product: "Milk", quantity: 3, price: 1.50 }
+//   ])
 // getTotalPrice([
 //     { product: "Chocolate", quantity: 11, price: 0.10 },
 //     { product: "Lollipop", quantity: 21, price: 0.20 }
