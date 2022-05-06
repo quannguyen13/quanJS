@@ -342,3 +342,20 @@ function toArray(obj) {
 }
 // toArray({ a: 1, b: 2 })
 // toArray({ piano: 500 }, "Brutus", 400)
+
+function getKeyByValue(object, value) {
+    return Object.keys(object).find(key => object[key] === value);
+}
+function inkLevels(obj) {
+    var check = Object.values(obj)
+    var remain = Math.min(...check)
+    console.log(remain)
+    console.log(getKeyByValue(obj, remain))
+
+}
+
+inkLevels({
+    "cyan": 23,
+    "magenta": 12,
+    "yellow": 10
+  })
