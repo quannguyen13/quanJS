@@ -354,8 +354,21 @@ function inkLevels(obj) {
 
 }
 
-inkLevels({
-    "cyan": 23,
-    "magenta": 12,
-    "yellow": 10
-  })
+// inkLevels({
+//     "cyan": 23,
+//     "magenta": 12,
+//     "yellow": 10
+//   })
+
+// Write a function that creates an object with each (key, value) pair being the (lower case, upper case) versions of a letter, respectively.
+// ? https://stackoverflow.com/questions/12539574/whats-the-best-way-most-efficient-to-turn-all-the-keys-of-an-object-to-lower
+function mapping(array){
+    var check = array.map(e => e ? e.toUpperCase() : null )
+    var newObj = Object.fromEntries(
+        Object.entries(check).map(([k, v]) => [array[k], v])
+      );
+    console.log(newObj);
+}
+mapping(["p", "s"])
+mapping(["a", "b", "c"])
+mapping(["a", "v", "y", "z"])
