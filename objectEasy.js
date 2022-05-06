@@ -269,3 +269,53 @@ function hasKey(obj, str) {
 // hasKey({ a: 44, b: 45, c: 46 }, "d")
 // hasKey({ pot: 1, tot: 2, not: 3 }, "not")
 // hasKey({ craves: true, midnight: true, snack: true }, "morning")
+
+
+function calculateDifference(items, limit) {
+    var convert = Object.values(items)
+    var totalItems = convert.reduce((a, b) => a + b, 0)
+    if (totalItems > limit) {
+        var yourPay = totalItems - limit
+        console.log(`your loss ${totalItems}, your cover ${limit}, you loss ${yourPay}`);
+    } else {
+        // var wePay = Math.abs(totalItems - limit)
+        console.log(`your loss ${totalItems}, your cover ${limit}, we pay you ${totalItems}`);
+        
+    }
+    // console.log(yourPay);
+}
+// calculateDifference({ "baseball bat": 20 }, 5)
+// calculateDifference({ skate: 10, painting: 20 }, 19)
+// calculateDifference({ tv: 200, desktop: 200, monitor: 100, table: 200 }, 1000)
+
+
+
+// Sorting
+var drinks = [
+    {name: "lemonade", price: 50},
+    {name: "lime", price: 10}
+  ]
+
+function sortDrinkByPrice(drinks){
+    var check = drinks.sort((a, b) => a.price - b.price)
+    console.log(check);
+}
+// sortDrinkByPrice(drinks)
+
+const list = {
+    "you": 100, 
+    "me": 75, 
+    "foo": 116, 
+    "bar": 15
+  };
+
+function sort(list){
+    // var sortable = Object.entries(list).sort((a, b) => a - b)
+    var sortable = Object.entries(list).sort()
+    var convert = Object.fromEntries(sortable)
+    console.log(sortable);
+    console.log(convert);
+}
+// ? source : Object.fromEntries()
+// ? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
+// sort(list)
