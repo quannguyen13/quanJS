@@ -378,7 +378,8 @@ function mapping(array){
 
 // Although the number of squares per roll of TP varies significantly, we'll assume: // ! each roll has 500 sheets, and the average person uses 57 sheets per day.
 // Create a function that will receive an object with two key/values:
-
+// ? integer without decimal: 
+// ? https://www.codegrepper.com/code-examples/javascript/javascript+integer+without+decimal
 function tpChecker(obj){
     var ppl = obj.people
     var papers = obj.tp
@@ -390,6 +391,6 @@ function tpChecker(obj){
     }
 }
 
-tpChecker({ people: 4, tp: 1 })
-tpChecker({ people: 3, tp: 20 })
-tpChecker({ people: 4, tp: 12 })
+// tpChecker({ people: 4, tp: 1 })
+// tpChecker({ people: 3, tp: 20 })
+// tpChecker({ people: 4, tp: 12 })
