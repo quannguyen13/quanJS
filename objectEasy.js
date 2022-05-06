@@ -260,3 +260,12 @@ function factorize(number) {
 // factorize(17)
 
 
+// Write a function that returns true if a hash contains the specified key, and false otherwise.
+function hasKey(obj, str) {
+    var convert = Object.keys(obj).toString()
+    var check = convert.includes(str)
+    console.log(check);
+}
+// hasKey({ a: 44, b: 45, c: 46 }, "d")
+// hasKey({ pot: 1, tot: 2, not: 3 }, "not")
+// hasKey({ craves: true, midnight: true, snack: true }, "morning")
