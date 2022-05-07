@@ -1,8 +1,7 @@
 // var arr = ['AAA', 'XYZ', 'AAA', 'ABC', 'XXX', 'XYZ', 'PQR']
 var arr = ["Red", "Green", "Yellow", "Blue", "Blue"]
-var checkIfDuplicate = arr.some((val, i) => arr.indexOf(val) !== i)
-  
-// console.log(checkIfDuplicate)
+var checkIfDuplicate = arr.some((ele, i) => arr.indexOf(ele) !== i)
+console.log(checkIfDuplicate)
 
 
 
@@ -16,6 +15,6 @@ function if_duplicate_value (arr){
     }
     return false;  
 }
-console.log(if_duplicate_value(arr))
+// console.log(if_duplicate_value(arr))
 
 // ? https://stackoverflow.com/questions/19655975/check-if-an-array-contains-duplicate-values
