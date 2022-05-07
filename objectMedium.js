@@ -43,22 +43,29 @@ function getTotalPrice(array) {
 
 // https://edabit.com/challenge/Np7R8F24PaqBShZc5
 function colorPatternTimes(array) {
-    var switchPencilsTiming = (array.length - 1) * 1
+    var switchPencilsTiming = (array.length - 1)
     var numberOfColors = 0
     for (let i = 0; i < array.length; i++) {
-        numberOfColors = i + 1;
+        if (array[i] == array[i + 1]) {
+            numberOfColors = 1
+        }
+        else if (array[i] !== array[i + 1]){
+            numberOfColors += 1;
+        }
     }
-    // console.log(numberOfColors);
+    console.log(numberOfColors);
     var colors = numberOfColors * 2
     var time = switchPencilsTiming + colors
-    console.log(time);
+    // console.log(time);
 }
-colorPatternTimes(["Red", "Yellow", "Green", "Blue"])
-colorPatternTimes(["Blue"])
-colorPatternTimes(["Blue", "Blue", "Blue", "Red", "Red", "Red"])
+// colorPatternTimes(["Blue", "Blue", "Blue", "Red", "Red", "Red"])
+// colorPatternTimes(["Red", "Yellow", "Green", "Blue", "Red"])
+// colorPatternTimes(["Red", "Yellow", "Green", "Blue"])
+// colorPatternTimes(["Blue"])
 
 
 
 
 
 // https://edabit.com/challenge/b7iHQDw72zzkmgCun
+
