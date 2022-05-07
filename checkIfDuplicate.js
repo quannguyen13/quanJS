@@ -1,3 +1,4 @@
+// var arr = ['AAA', 'XYZ', 'AAA', 'ABC', 'XXX', 'XYZ', 'PQR']
 var arr = ["Red", "Green", "Yellow", "Blue", "Blue"]
 var checkIfDuplicate = arr.some((val, i) => arr.indexOf(val) !== i)
   
