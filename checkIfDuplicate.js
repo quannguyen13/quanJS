@@ -16,3 +16,5 @@ function if_duplicate_value (arr){
     return false;  
 }
 console.log(if_duplicate_value(arr))
+
+// ? https://stackoverflow.com/questions/19655975/check-if-an-array-contains-duplicate-values
