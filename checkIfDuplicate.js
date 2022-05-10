@@ -3,7 +3,7 @@ var arr = ["Red", "Green", "Yellow", "Blue", "Blue"]
 var checkIfDuplicate = arr.some((ele, i) => arr.indexOf(ele) !== i)
 // console.log(checkIfDuplicate)
 var check = arr.map((ele => arr.indexOf(ele)))
-console.log(check);
+// console.log(check);
 
 
 
@@ -20,3 +20,14 @@ function if_duplicate_value (arr){
 // console.log(if_duplicate_value(arr))
 
 // ? https://stackoverflow.com/questions/19655975/check-if-an-array-contains-duplicate-values
+
+
+// !! Andre solution
+// new Set method remove all duplicate elements in array
+let newArr = new Set(arr)
+
+console.log(newArr.size)
+console.log(arr.length)
+if(arr.length !== newArr.size){
+    console.log(false); 
+}

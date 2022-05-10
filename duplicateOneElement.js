@@ -6,12 +6,12 @@ function duplicateZero(){
 
     // step 1: find number 0 and if found then push another zero next to existed one
     const pushZero = arr1.flatMap((element) => element == 0 ? arr1.constructor(element, element) : element );
-    // console.log(pushZero);
+    console.log(pushZero);
      // step 2: when step 1 is completed then use slice method to remove last 3 elements
     const removeLast3 = pushZero.slice(0, pushZero.length - 3);
     console.log(removeLast3);
 }
-// duplicateZero(arr1) 
+duplicateZero(arr1) 
 
 // ! resources flatMap vs map:
 // ?  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap
@@ -29,7 +29,7 @@ function duplicateString(){
     const randomDuplicate = array.flatMap(element => element === array[Math.floor(Math.random() * array.length)] ? array.constructor(element, element): element)
     console.log(randomDuplicate);
 }
-duplicateString(array)
+// duplicateString(array)
 
 
 
