@@ -53,6 +53,6 @@ function isPositiveDominant(array) {
     var uniqueNegativeArray = negativeArray.filter((x, i, a) => a.indexOf(x) == i)
     console.log(uniqueNegativeArray);
 }
-// isPositiveDominant([1, 1, 1, 1, -3, -3])
+isPositiveDominant([1, 1, 1, 1, -3, -3])
 isPositiveDominant([5, 99, 832, -3, -4])
 
