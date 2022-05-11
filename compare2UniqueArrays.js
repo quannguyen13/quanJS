@@ -23,7 +23,11 @@ function isPositiveDominant(array) {
         console.log(false);
     }
 }
-
+// isPositiveDominant([1, 1, 1, 1, -3, -3])
+// isPositiveDominant([1, 1, 1, 1, -3, -4])
+// isPositiveDominant([5, 99, 832, -3, -4])
+// isPositiveDominant([5, 0])
+// isPositiveDominant([0, -4, -1])
 
 
 // ? CASE 2: use for loop to filter positive and negative number
@@ -69,8 +73,9 @@ function isPositiveDominant2(array) {
 
 
 
-// isPositiveDominant([1, 1, 1, 1, -3, -3])
-// isPositiveDominant([1, 1, 1, 1, -3, -4])
-isPositiveDominant([5, 99, 832, -3, -4])
-isPositiveDominant([5, 0])
-isPositiveDominant([0, -4, -1])
+
+isPositiveDominant2([1, 1, 1, 1, -3, -3])
+isPositiveDominant2([1, 1, 1, 1, -3, -4])
+isPositiveDominant2([5, 99, 832, -3, -4])
+isPositiveDominant2([5, 0])
+isPositiveDominant2([0, -4, -1])
