@@ -92,5 +92,5 @@ function isPositiveDominant(array) {
 // isPositiveDominant([1, 1, 1, 1, -3, -3])
 // isPositiveDominant([1, 1, 1, 1, -3, -4])
 isPositiveDominant([5, 99, 832, -3, -4])
-// isPositiveDominant([5, 0])
-// isPositiveDominant([0, -4, -1])
+isPositiveDominant([5, 0])
+isPositiveDominant([0, -4, -1])
