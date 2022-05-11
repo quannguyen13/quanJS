@@ -23,3 +23,23 @@ function numInStr(array) {
 // numInStr(["this is a test", "test1"])
 
 // !________________________________________
+
+function isPositiveDominant(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > 0) {
+            if (array[i] !== array[i + 1]) {
+                var positive = array[i]
+                // console.log("first call", array[i],"second call", array[i + 1]);
+                console.log(positive);
+            }
+            else if (array[i] === array[i + 1]){
+                var unique = array[i]
+                console.log(unique);
+            }
+
+        }
+        
+    }
+}
+isPositiveDominant([1, 1, 1, 1, -3, -4])
+isPositiveDominant([5, 99, 832, -3, -4])

@@ -31,21 +31,21 @@ function colorPatternTimes(array) {
 
 // !!__________________________________________________________________________________
 // !! ANDRE SOLUTION
-// function colorPatternTimes(array) {  
-//     let swithchColors = 0
-//     for (let i = 0; i < array.length; i++) {
+function colorPatternTimes(array) {  
+    let swithchColors = 0
+    for (let i = 0; i < array.length; i++) {
 
-//         if (array[i] !== array[i + 1] && array[i + 1] !== undefined){
-//             swithchColors += 1;
-//             console.log("first call", array[i],"second call", array[i + 1]);
-//         }
-//     }
+        if (array[i] !== array[i + 1] && array[i + 1] !== undefined){
+            swithchColors += 1;
+            console.log("first call", array[i],"second call", array[i + 1]);
+        }
+    }
 
-//     let colors = array.length * 2
-//     let totalTime = swithchColors + colors
-//     console.log(totalTime);
-// }
-colorPatternTimes(["Blue", "Blue", "Blue", "Red", "Red", "Red"])
+    let colors = array.length * 2
+    let totalTime = swithchColors + colors
+    console.log(totalTime);
+}
+// colorPatternTimes(["Blue", "Blue", "Blue", "Red", "Red", "Red"])
 // colorPatternTimes(["Red", "Yellow", "Green", "Blue", "Red"])
 // colorPatternTimes(["Red", "Yellow", "Green", "Blue"])
 // colorPatternTimes(["Blue"])
