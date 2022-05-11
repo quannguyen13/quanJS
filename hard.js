@@ -29,9 +29,8 @@ function numInStr(array) {
 // console.log(uniqueAges)
 function isPositiveDominant(array) {
     var positiveArray = []
-    var uniqueArray = []
     for (let i = 0; i < array.length; i++) {
-        if (array[i] > 0) {
+        if (array[i] >= 0) {
             if (array[i] !== array[i + 1]) {
                 var positive = array[i]
                 positiveArray.push(positive)
@@ -39,7 +38,7 @@ function isPositiveDominant(array) {
             }
             else if (array[i] === array[i + 1]){
                 var unique = array[i]
-                uniqueArray.push(unique)
+                positiveArray.push(unique)
                 
                 // console.log(unique);
             }
@@ -47,11 +46,12 @@ function isPositiveDominant(array) {
         }
         
     }
-    var convertToUnique = uniqueArray.filter((x, i, a) => a.indexOf(x) == i)
-    console.log(positiveArray);
-    // console.log(uniqueArray);
+    var convertToUnique = positiveArray.filter((x, i, a) => a.indexOf(x) == i)
+    // console.log(positiveArray);
     console.log(convertToUnique);
+    var negativeArray = array.filter(e => e < 0 ? e : null)
+    // console.log(negativeArray.filter((x, i, a) => a.indexOf(x) == i))
 }
-isPositiveDominant([1, 1, 1, 1, -3, -4])
-// isPositiveDominant([5, 99, 832, -3, -4])
+// isPositiveDominant([1, 1, 1, 1, -3, -3])
+isPositiveDominant([5, 99, 832, -3, -4])
 
