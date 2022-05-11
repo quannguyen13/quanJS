@@ -23,23 +23,35 @@ function numInStr(array) {
 // numInStr(["this is a test", "test1"])
 
 // !________________________________________
-
+// ? create a unique example:
+// const ages = [26, 27, 26, 26, 28, 28, 29, 29, 30]
+// const uniqueAges = ages.filter((x, i, a) => a.indexOf(x) == i)
+// console.log(uniqueAges)
 function isPositiveDominant(array) {
+    var positiveArray = []
+    var uniqueArray = []
     for (let i = 0; i < array.length; i++) {
         if (array[i] > 0) {
             if (array[i] !== array[i + 1]) {
                 var positive = array[i]
-                // console.log("first call", array[i],"second call", array[i + 1]);
-                console.log(positive);
+                positiveArray.push(positive)
+                // console.log(positive);
             }
             else if (array[i] === array[i + 1]){
                 var unique = array[i]
-                console.log(unique);
+                uniqueArray.push(unique)
+                
+                // console.log(unique);
             }
-
+            
         }
         
     }
+    var convertToUnique = uniqueArray.filter((x, i, a) => a.indexOf(x) == i)
+    console.log(positiveArray);
+    // console.log(uniqueArray);
+    console.log(convertToUnique);
 }
 isPositiveDominant([1, 1, 1, 1, -3, -4])
-isPositiveDominant([5, 99, 832, -3, -4])
+// isPositiveDominant([5, 99, 832, -3, -4])
+
