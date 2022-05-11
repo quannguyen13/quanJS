@@ -46,11 +46,12 @@ function isPositiveDominant(array) {
         }
         
     }
-    var convertToUnique = positiveArray.filter((x, i, a) => a.indexOf(x) == i)
+    var uniquePositiveArray = positiveArray.filter((x, i, a) => a.indexOf(x) == i)
     // console.log(positiveArray);
-    console.log(convertToUnique);
+    console.log(uniquePositiveArray);
     var negativeArray = array.filter(e => e < 0 ? e : null)
-    // console.log(negativeArray.filter((x, i, a) => a.indexOf(x) == i))
+    var uniqueNegativeArray = negativeArray.filter((x, i, a) => a.indexOf(x) == i)
+    console.log(uniqueNegativeArray);
 }
 // isPositiveDominant([1, 1, 1, 1, -3, -3])
 isPositiveDominant([5, 99, 832, -3, -4])
