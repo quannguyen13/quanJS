@@ -3,32 +3,31 @@
 
 
 // ? create a unique array:
-// const ages = [26, 27, 26, 26, 28, 28, 29, 29, 30]
-// const uniqueAges = ages.filter((x, i, a) => a.indexOf(x) == i)
+const ages = [26, 27, 26, 26, 28, 28, 29, 29, 30]
+const uniqueAges = ages.filter((x, i, a) => a.indexOf(x) == i)
 // console.log(uniqueAges)
 
 
 
 // ? CASE 1: use for filter() to filter positive and negative number
-// function isPositiveDominant(array) {
-//     var positiveArray = array.filter(e => e > 0 ? e : null)
-//     // console.log(positiveArray);
-//     var uniquePositiveArray = positiveArray.filter((x, i, a) => a.indexOf(x) == i)
-//     // console.log(uniquePositiveArray);
-//     var negativeArray = array.filter(e => e < 0 ? e : null)
-//     var uniqueNegativeArray = negativeArray.filter((x, i, a) => a.indexOf(x) == i)
-//     // console.log(uniqueNegativeArray);
-//     if (uniquePositiveArray.length > uniqueNegativeArray.length) {
-//         console.log(true);
-//     } else {
-//         console.log(false);
-//     }
-// }
+function isPositiveDominant(array) {
+    var positiveArray = array.filter(e => e > 0 ? e : null)
+    var uniquePositiveArray = positiveArray.filter((x, i, a) => a.indexOf(x) == i)
+    // console.log(uniquePositiveArray);
+    var negativeArray = array.filter(e => e < 0 ? e : null)
+    var uniqueNegativeArray = negativeArray.filter((x, i, a) => a.indexOf(x) == i)
+    // console.log(uniqueNegativeArray);
+    if (uniquePositiveArray.length > uniqueNegativeArray.length) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
 
 
 
 // ? CASE 2: use for loop to filter positive and negative number
-function isPositiveDominant(array) {
+function isPositiveDominant2(array) {
     var positiveArray = []
     var negativeArray = []
     for (let i = 0; i < array.length; i++) {
