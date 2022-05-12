@@ -24,40 +24,28 @@ function numInStr(array) {
 
 
 // !________________________________________
-
+// https://www.tutorialspoint.com/how-to-return-object-from-an-array-with-highest-key-values-along-with-name-javascript
 const getStudentsWithNamesAndTopNotes = (array) => {
-    // var name = array.map(e => e.name)
-    // console.log(name);
-    // var notes = array.map(e => Math.max(...e.notes))
-    // console.log(notes);
-    // var res = {
-    //     name: '',
-    //     notes: -Infinity
-    //  };
-    //  array.forEach(el => {
-    //     const { name, notes } = el;
-    //     if(total > res.total){
-    //        res.name = name;
-    //        res.total = total;
-    //     };
-    //  });
-    //  return res;
-    for (let i = 0; i < array.length; i++) {
-        const element1 = array[i].name;
-        console.log(element1);
-        
-        
-        for (let j = 0; j < array.length; j++) {
-            var element2 = Math.max(...array[j].notes)
-            console.log(element2);
-            
-        }
+    var newArray = []
+    var res = {
+        name: "",
+        notes: -Infinity
     }
+    var maxPoints = array.map(e => Math.max(...e.notes))
+    for (let i = 0; i < array.length; i++) {
+        res.name = array[i].name
+        res.notes = Math.max(...array[i].notes)
+        // console.log(array[i].name);
+        newArray.push(res)
+    }
+    
+    console.log(newArray)
 }
-var result =
+
+// var result =
 getStudentsWithNamesAndTopNotes([
     { "name": "John", "notes": [3, 5, 4] },
     { "name": "Max", "notes": [1, 4, 6] },
     { "name": "Zygmund", "notes": [1, 2, 3] }
   ])
-console.log(result);
+// console.log(result);
