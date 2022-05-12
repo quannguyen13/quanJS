@@ -26,6 +26,8 @@ function numInStr(array) {
 
 // !________________________________________
 // https://www.tutorialspoint.com/how-to-return-object-from-an-array-with-highest-key-values-along-with-name-javascript
+
+// ? challenge; https://edabit.com/challenge/GJD5x54NaFZwbtxQW
 function getStudentsWithNamesAndTopNotes(array){
     var newArray = []
     for (let i = 0; i < array.length; i++) {
