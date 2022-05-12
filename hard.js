@@ -30,10 +30,10 @@ const getStudentsWithNamesAndTopNotes = (array) => {
     // console.log(name);
     // var notes = array.map(e => Math.max(...e.notes))
     // console.log(notes);
-    const res = {
-        name: '',
-        total: -Infinity
-     };
+    // var res = {
+    //     name: '',
+    //     notes: -Infinity
+    //  };
     //  array.forEach(el => {
     //     const { name, notes } = el;
     //     if(total > res.total){
@@ -44,15 +44,14 @@ const getStudentsWithNamesAndTopNotes = (array) => {
     //  return res;
     for (let i = 0; i < array.length; i++) {
         const element1 = array[i].name;
-
-    }
-    for (let j = 0; j < array.length; j++) {
-        const element2 = Math.max(...array[j].notes);
-        // console.log(element1);
-        // return element1, element2
-        console.log(element2);
-        // return element2
-        // console.log(element1 + " " + element2);
+        console.log(element1);
+        
+        
+        for (let j = 0; j < array.length; j++) {
+            var element2 = Math.max(...array[j].notes)
+            console.log(element2);
+            
+        }
     }
 }
 var result =
