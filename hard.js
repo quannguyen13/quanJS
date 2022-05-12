@@ -22,3 +22,43 @@ function numInStr(array) {
 // numInStr(["abc", "ab10c", "a10bc", "bcd"])
 // numInStr(["this is a test", "test1"])
 
+
+// !________________________________________
+
+const getStudentsWithNamesAndTopNotes = (array) => {
+    // var name = array.map(e => e.name)
+    // console.log(name);
+    // var notes = array.map(e => Math.max(...e.notes))
+    // console.log(notes);
+    const res = {
+        name: '',
+        total: -Infinity
+     };
+    //  array.forEach(el => {
+    //     const { name, notes } = el;
+    //     if(total > res.total){
+    //        res.name = name;
+    //        res.total = total;
+    //     };
+    //  });
+    //  return res;
+    for (let i = 0; i < array.length; i++) {
+        const element1 = array[i].name;
+
+    }
+    for (let j = 0; j < array.length; j++) {
+        const element2 = Math.max(...array[j].notes);
+        // console.log(element1);
+        // return element1, element2
+        console.log(element2);
+        // return element2
+        // console.log(element1 + " " + element2);
+    }
+}
+var result =
+getStudentsWithNamesAndTopNotes([
+    { "name": "John", "notes": [3, 5, 4] },
+    { "name": "Max", "notes": [1, 4, 6] },
+    { "name": "Zygmund", "notes": [1, 2, 3] }
+  ])
+console.log(result);
