@@ -29,8 +29,7 @@ function numInStr(array) {
 function getStudentsWithNamesAndTopNotes(array){
     var newArray = []
     for (let i = 0; i < array.length; i++) {
-        res.name = array[i].name
-        res.notes = Math.max(...array[i].notes)
+ 
         newArray.push(res)
         console.log(array[i].name);
         console.log(Math.max(...array[i].notes));
