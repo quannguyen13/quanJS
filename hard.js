@@ -34,23 +34,42 @@ function getStudentsWithNamesAndTopNotes(array){
  
         // console.log(array[i].name);
         // console.log(Math.max(...array[i].notes));
-        var res = {
+        var newObject = {
             name: array[i].name,
             notes: (Math.max(...array[i].notes))
         }
-        newArray.push(res)
+        newArray.push(newObject)
     }
-    console.log(newArray)
+    // console.log(newArray)
+    return newArray
 }
 
-
+var result = 
 getStudentsWithNamesAndTopNotes([
     { "name": "John", "notes": [3, 5, 4] },
     { "name": "Max", "notes": [1, 4, 6] },
-    { "name": "Zygmund", "notes": [1, 2, 3] }
+    { "name": "Zygmund", "notes": [1, 2, 3] },
+    { "name": "Ronaldo", "notes": [6, 2, 8] }
   ])
+console.log(result);
 
 
+// ? BONUS: same challenge, find the top one with highest notes
 
-
+function topOne(array) {
+        const theOne = {
+           name: '',
+           notes: -Infinity
+        };
+        array.forEach(el => {
+           const { name, notes } = el;
+           if(notes > theOne.notes){
+              theOne.name = name;
+              theOne.notes = notes;
+           };
+        });
+        return theOne;
+     
+}
+console.log(topOne(result));
 
