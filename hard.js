@@ -30,16 +30,15 @@ function getStudentsWithNamesAndTopNotes(array){
     var newArray = []
     for (let i = 0; i < array.length; i++) {
  
-        newArray.push(res)
-        console.log(array[i].name);
-        console.log(Math.max(...array[i].notes));
+        // console.log(array[i].name);
+        // console.log(Math.max(...array[i].notes));
         var res = {
             name: array[i].name,
             notes: (Math.max(...array[i].notes))
         }
         console.log(res);
     }
-    // console.log(newArray)
+    console.log(newArray)
 }
 
 // var result =
