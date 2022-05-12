@@ -1,3 +1,4 @@
+
 //  challenge: https://edabit.com/challenge/yXSTvCNen2DQHyrh6
 function getLength(array) {
     var breakOut = array.toString().split(",").length
@@ -25,21 +26,21 @@ function numInStr(array) {
 
 // !________________________________________
 // https://www.tutorialspoint.com/how-to-return-object-from-an-array-with-highest-key-values-along-with-name-javascript
-const getStudentsWithNamesAndTopNotes = (array) => {
+function getStudentsWithNamesAndTopNotes(array){
     var newArray = []
-    var res = {
-        name: "",
-        notes: -Infinity
-    }
-    var maxPoints = array.map(e => Math.max(...e.notes))
     for (let i = 0; i < array.length; i++) {
         res.name = array[i].name
         res.notes = Math.max(...array[i].notes)
-        // console.log(array[i].name);
         newArray.push(res)
+        console.log(array[i].name);
+        console.log(Math.max(...array[i].notes));
+        var res = {
+            name: array[i].name,
+            notes: (Math.max(...array[i].notes))
+        }
+        console.log(res);
     }
-    
-    console.log(newArray)
+    // console.log(newArray)
 }
 
 // var result =
@@ -49,3 +50,8 @@ getStudentsWithNamesAndTopNotes([
     { "name": "Zygmund", "notes": [1, 2, 3] }
   ])
 // console.log(result);
+
+// const a = ["a", "b", "c"];
+// a.forEach((element) => {
+//     console.log(element);
+// });
