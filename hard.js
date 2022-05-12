@@ -36,7 +36,7 @@ function getStudentsWithNamesAndTopNotes(array){
             name: array[i].name,
             notes: (Math.max(...array[i].notes))
         }
-        console.log(res);
+        newArray.push(res)
     }
     console.log(newArray)
 }
