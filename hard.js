@@ -78,7 +78,7 @@ function topOne(array) {
 // challenge: https://edabit.com/challenge/7WZBxctgouiNRYAX2
 // ? source: https://www.math.net/pythagorean-triples
 
-function isPrimPythTriple() {
+function isPrimPythTriple(array) {
     console.log(array);
     var sort = array.sort()
     var pyTriples1 =  Math.pow(sort[0],2) + Math.pow(sort[1],2)
