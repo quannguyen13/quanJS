@@ -51,7 +51,7 @@ getStudentsWithNamesAndTopNotes([
     { "name": "Zygmund", "notes": [1, 2, 3] },
     { "name": "Ronaldo", "notes": [6, 2, 8] }
   ])
-console.log(result);
+// console.log(result);
 
 
 // ? BONUS: same challenge, find the top one with highest notes
@@ -69,7 +69,11 @@ function topOne(array) {
            };
         });
         return theOne;
+
      
 }
-console.log(topOne(result));
+// console.log(topOne(result));
 
+// !________________________________________
+// challenge: https://edabit.com/challenge/7WZBxctgouiNRYAX2
+// ? source: https://www.math.net/pythagorean-triples
