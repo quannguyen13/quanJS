@@ -80,15 +80,18 @@ function topOne(array) {
 
 function isPrimPythTriple(array) {
     console.log(array);
-    var sort = array.sort()
+    var sort = array.sort((a, b) => a - b)
     var pyTriples1 =  Math.pow(sort[0],2) + Math.pow(sort[1],2)
     var pyTriples2 = Math.pow(Math.max(...sort), 2)
+    console.log(sort);
     // console.log(pyTriples1);
     // console.log(pyTriples2);
     var check = array.filter(e => e % 2 == 1)
+    var check2 = array.every(e => e % 2 == 0)
     // console.log(check);
+    // console.log(check2);
    
-    if (check.length = 2 && pyTriples1 == pyTriples2) {
+    if (check.length == 2 && pyTriples1 == pyTriples2) {
         return true
     } 
     else {
@@ -99,9 +102,9 @@ function isPrimPythTriple(array) {
 var result =
 // isPrimPythTriple([4, 5, 3])
 // isPrimPythTriple([7, 12, 13])
-// isPrimPythTriple([7, 12, 14])
-// isPrimPythTriple([6, 8, 10])
-isPrimPythTriple([39, 15, 36])
+isPrimPythTriple([8, 12, 14])
+// isPrimPythTriple([5, 12, 13])
+// isPrimPythTriple([39, 15, 36])
 console.log(result);
 
 
