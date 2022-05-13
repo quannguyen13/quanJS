@@ -103,3 +103,7 @@ var result =
 // isPrimPythTriple([6, 8, 10])
 isPrimPythTriple([39, 15, 36])
 console.log(result);
+
+
+
+// https://edabit.com/challenge/vhD8xhcFfCJdi4BMs
