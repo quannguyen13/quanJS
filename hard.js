@@ -77,3 +77,29 @@ function topOne(array) {
 // !________________________________________
 // challenge: https://edabit.com/challenge/7WZBxctgouiNRYAX2
 // ? source: https://www.math.net/pythagorean-triples
+
+function isPrimPythTriple() {
+    console.log(array);
+    var sort = array.sort()
+    var pyTriples1 =  Math.pow(sort[0],2) + Math.pow(sort[1],2)
+    var pyTriples2 = Math.pow(Math.max(...sort), 2)
+    // console.log(pyTriples1);
+    // console.log(pyTriples2);
+    var check = array.filter(e => e % 2 == 1)
+    // console.log(check);
+   
+    if (check.length = 2 && pyTriples1 == pyTriples2) {
+        return true
+    } 
+    else {
+        return false
+    }
+
+}
+var result =
+// isPrimPythTriple([4, 5, 3])
+// isPrimPythTriple([7, 12, 13])
+// isPrimPythTriple([7, 12, 14])
+// isPrimPythTriple([6, 8, 10])
+isPrimPythTriple([39, 15, 36])
+console.log(result);
