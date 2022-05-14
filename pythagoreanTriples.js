@@ -24,15 +24,27 @@ function isPrimPythTriple(array) {
     }
 
 }
-var result =
+// var result =
 // isPrimPythTriple([4, 5, 3])
 // isPrimPythTriple([7, 12, 13])
 // isPrimPythTriple([8, 12, 14])
 // isPrimPythTriple([5, 12, 13])
-isPrimPythTriple([39, 15, 36])
+// isPrimPythTriple([39, 15, 36])
 // isPrimPythTriple([77, 36, 85])
-console.log(result);
+// console.log(result);
 
 
 
 // https://edabit.com/challenge/vhD8xhcFfCJdi4BMs
+
+var test = 15
+
+function testRun(number) {
+    for (let i = 0; i < number; i++) {
+        if (number % i == 0) {
+            console.log(i);
+        }
+
+    }
+}
+testRun(test)
