@@ -405,3 +405,18 @@ function evenOddPartition(array) {
 // evenOddPartition([1, 0, 1, 0, 1, 0])
 // evenOddPartition([1, 3, 5, 7, 9])
 // evenOddPartition([])
+
+
+
+function testRun2(a, b ,c) {
+    var a = 2
+    var b = 1
+    var c = 1
+    if (a == b && b == c && a == c) {
+        console.log(true);
+    } else {
+        console.log(false);
+        
+    }
+}
+// testRun2()
