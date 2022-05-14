@@ -102,9 +102,10 @@ function isPrimPythTriple(array) {
 var result =
 // isPrimPythTriple([4, 5, 3])
 // isPrimPythTriple([7, 12, 13])
-isPrimPythTriple([8, 12, 14])
+// isPrimPythTriple([8, 12, 14])
 // isPrimPythTriple([5, 12, 13])
-// isPrimPythTriple([39, 15, 36])
+isPrimPythTriple([39, 15, 36])
+// isPrimPythTriple([77, 36, 85])
 console.log(result);
 
 
