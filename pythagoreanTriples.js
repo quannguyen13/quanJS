@@ -25,19 +25,19 @@ function primitiveOrNot(arr) {
             firstArray.push(i)
         }
     }
-    console.log(firstArray);
+    // console.log(firstArray);
     for (let j = 1; j <= sort[1]; j++) {
         if (sort[1] % j == 0) {
             secondArray.push(j)
         }
     }
-    console.log(secondArray);
+    // console.log(secondArray);
     for (let k = 1; k <= sort[2]; k++) {
         if (sort[2] % k == 0) {
             thirdArray.push(k)
         }
     }
-    console.log(thirdArray);
+    // console.log(thirdArray);
     var data = [firstArray, secondArray, thirdArray];
     var result = data.reduce((a, b) => a.filter(c => b.includes(c)));
     // console.log(result);
@@ -52,11 +52,11 @@ function primitiveOrNot(arr) {
 // primitiveOrNot(arr)
 
 function isPrimPythTriple(array) {
-    console.log(array);
+    // console.log(array);
     var sort = array.sort((a, b) => a - b)
     var pyTriples1 =  Math.pow(sort[0],2) + Math.pow(sort[1],2)
     var pyTriples2 = Math.pow(Math.max(...sort), 2)
-    console.log(sort);
+    // console.log(sort);
     // console.log(pyTriples1);
     // console.log(pyTriples2);
     var check = array.filter(e => e % 2 == 1)
@@ -76,9 +76,9 @@ var result =
 // isPrimPythTriple([7, 12, 13])
 // isPrimPythTriple([8, 12, 14])
 // isPrimPythTriple([5, 12, 13])
-// isPrimPythTriple([39, 15, 36])
+isPrimPythTriple([39, 15, 36])
 // isPrimPythTriple([77, 36, 85])
-isPrimPythTriple([77, 36, 44])
+// isPrimPythTriple([77, 36, 44])
 console.log(result);
 
 
