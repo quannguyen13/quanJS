@@ -41,3 +41,36 @@ function weeklySalary(array) {
 // weeklySalary([10, 10, 10, 10, 10, 5, 0])
 // weeklySalary([8, 10, 9, 9, 8, 5, 0])
 weeklySalary([12, 6, 5, 9, 4, 5, 0])
+
+
+
+// BONUS: 
+// write a function to return final works hours of each emplyee and pay in object 
+// expected result:
+
+[
+{
+    name: "Quan", hours:[8, 8, 8, 8, 8, 0, 0], pay:""
+},
+{
+    name: "Juan", hours:[8, 8, 8, 8, 8, 8, 0], pay:""
+},
+{
+    name: "Dale", hours:[10, 10, 10, 10, 10, 5, 0], pay:""
+}
+
+]
+
+// expeceted:
+[
+    {
+        name: "Quan", hours:[40, 0], pay:"xxxxx"
+    },
+    {
+        name: "Juan", hours:[48, 8], pay:"xxxxx"
+    },
+    {
+        name: "Dale", hours:[55, 15], pay:"xxxxxxx"
+    }
+    
+    ]
