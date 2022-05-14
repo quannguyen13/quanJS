@@ -37,11 +37,11 @@ function isPrimPythTriple(array) {
 
 // https://edabit.com/challenge/vhD8xhcFfCJdi4BMs
 
-var test = [4, 5, 3]
+var arr = [4, 5, 3]
 
 
-function testRun(array) {
-    var sort = array.sort((a, b) => a - b)
+function primitiveOrNot(arr) {
+    var sort = arr.sort((a, b) => a - b)
     var firstArray = []
     var secondArray = []
     var thirdArray = []
@@ -63,9 +63,21 @@ function testRun(array) {
         }
     }
     console.log(thirdArray);
-
+    var checArray = []
+    for (let x = 0; x < firstArray.length; x++) {
+        for (let y = 0; y < secondArray.length; y++) {
+            for (let z = 0; z < thirdArray.length; z++) {
+                if (firstArray[x] == secondArray[y] && thirdArray[z] == secondArray[y] && thirdArray[z] == firstArray[x]) {
+                    console.log(true);
+                } else {
+                    console.log(false);
+                }
+            }
+        }
+        
+    }
 }
-testRun(test)
+primitiveOrNot(arr)
 
 
 
