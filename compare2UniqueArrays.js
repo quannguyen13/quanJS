@@ -1,5 +1,9 @@
 // !________________________________________
 // challenge: https://edabit.com/challenge/7pkKPYtTJzpxRMckZ
+// Examples"
+// isPositiveDominant([1, 1, 1, 1, -3, -4]) ➞ false
+// There is only 1 unique positive value (1).
+// There are 2 unique negative values (-3, -4).
 
 
 // ? create a unique array:
