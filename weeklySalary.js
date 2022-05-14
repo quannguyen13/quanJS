@@ -45,8 +45,8 @@ weeklySalary([12, 6, 5, 9, 4, 5, 0])
 
 
 // BONUS: 
-// write a function to return final works hours of each emplyee and pay in object 
-// expected result:
+// 1. write a function to return final works hours of each emplyee and pay in object 
+// 2. find the most dedicate employee by works hours and pay
 
 [
 {
@@ -61,7 +61,7 @@ weeklySalary([12, 6, 5, 9, 4, 5, 0])
 
 ]
 
-// expeceted:
+// expected result::
 [
     {
         name: "Quan", hours:[40, 0], pay:"xxxxx"

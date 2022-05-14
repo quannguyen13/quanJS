@@ -68,5 +68,5 @@ console.log(Math.random());
 
 
 // challenge :
-// write a function to find common factor of 2 given number randomly
-// bonus: find available find the greatest common factor
+// 1. write a function to find adn print most common factor of 2 given number randomly
+// bonus: if available find the greatest common factor
