@@ -37,14 +37,23 @@ function isPrimPythTriple(array) {
 
 // https://edabit.com/challenge/vhD8xhcFfCJdi4BMs
 
-var test = 15
+var test = [4, 5, 3]
 
-function testRun(number) {
-    for (let i = 0; i < number; i++) {
-        if (number % i == 0) {
-            console.log(i);
+function testRun(array) {
+    var sort = array.sort((a, b) => a - b)
+    for (let i = 0; i <= sort[0]; i++) {
+        console.log(i);
+        for (let j = 0; j <= sort[1]; j++) {
+            // console.log(j);
+            for (let k = 0; k <= sort[2]; k++) {
+                // console.log(k);
+
+
+        }
+            
+        }
         }
 
     }
-}
+
 testRun(test)
