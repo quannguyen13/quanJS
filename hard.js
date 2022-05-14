@@ -77,6 +77,7 @@ function topOne(array) {
 // !________________________________________
 // challenge: https://edabit.com/challenge/7WZBxctgouiNRYAX2
 // ? source: https://www.math.net/pythagorean-triples
+// ? https://tutors.com/math-tutors/geometry-help/pythagorean-triples
 
 function isPrimPythTriple(array) {
     console.log(array);
