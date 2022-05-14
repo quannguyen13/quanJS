@@ -39,21 +39,45 @@ function isPrimPythTriple(array) {
 
 var test = [4, 5, 3]
 
+
 function testRun(array) {
     var sort = array.sort((a, b) => a - b)
-    for (let i = 0; i <= sort[0]; i++) {
-        console.log(i);
-        for (let j = 0; j <= sort[1]; j++) {
-            // console.log(j);
-            for (let k = 0; k <= sort[2]; k++) {
-                // console.log(k);
-
-
+    var firstArray = []
+    var secondArray = []
+    var thirdArray = []
+    for (let i = 1; i <= sort[0]; i++) {
+        if (sort[0] % i == 0) {
+            firstArray.push(i)
         }
-            
-        }
-        }
-
     }
+    console.log(firstArray);
+    for (let j = 1; j <= sort[1]; j++) {
+        if (sort[1] % j == 0) {
+            secondArray.push(j)
+        }
+    }
+    console.log(secondArray);
+    for (let k = 1; k <= sort[2]; k++) {
+        if (sort[2] % k == 0) {
+            thirdArray.push(k)
+        }
+    }
+    console.log(thirdArray);
 
+}
 testRun(test)
+
+
+
+function testRun2(a, b ,c) {
+    var a = 2
+    var b = 1
+    var c = 1
+    if (a == b && b == c && a == c) {
+        console.log(true);
+    } else {
+        console.log(false);
+        
+    }
+}
+// testRun2()
