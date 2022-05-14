@@ -42,13 +42,10 @@ function primitiveOrNot(arr) {
     var result = data.reduce((a, b) => a.filter(c => b.includes(c)));
     // console.log(result);
     if (result.length == 1) {
-        // console.log(true);
         return true
     } 
     else {
         return false
-        // console.log(false);
-        
     }
 }
 // primitiveOrNot(arr)
