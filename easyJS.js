@@ -437,4 +437,5 @@ function addUp(number) {
 
 addUp(4)
 addUp(13)
+addUp(500)
 addUp(600)
