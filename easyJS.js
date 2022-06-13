@@ -476,6 +476,9 @@ function highLow(str) {
 
 
 // Create a function that returns the mean of all digits.
+// ? https://edabit.com/challenge/JAgtuPDXj6BrDMxa5
+// The mean of all digits is the sum of digits / how many digits there are (e.g. mean of digits in 512 is (5+1+2)/3(number of digits) = 8/3=2).
+// The mean will always be an integer.
 function mean(number)   {
     var newArray = []    
     var str = number.toString().split("")
@@ -484,6 +487,6 @@ function mean(number)   {
     var meanNumber = (newArray.reduce((a, b) => a + b)) / newArray.length
     console.log(meanNumber);
 }
-mean(42)
-mean(12345)
-mean(666)
+// mean(42)
+// mean(12345)
+// mean(666)
