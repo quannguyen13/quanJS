@@ -456,8 +456,8 @@ function addUp(number) {
 
 function highLow(str) {
     var newArray = []
-    var edit = str.split(" ").join("").split("")
-    console.log(edit);
+    var edit = str.split(" ")
+    // console.log(edit);
     edit.forEach(e => newArray.push(Number(e)))
     // console.log(newArray);
     var a = Math.max(...newArray)
@@ -466,9 +466,9 @@ function highLow(str) {
     // console.log(b);
     var newArray2 = [a, b]
     var convertToString = newArray2.toString().split(",").join(" ")
-    // console.log(convertToString);
+    console.log(convertToString);
 }
-// highLow("1 2 3 4 5")
+highLow("1 2 3 4 5")
 highLow("1 2 -3 4 5")
-// highLow("1 9 3 4 -5")
+highLow("1 9 3 4 -5")
 // highLow("13")
