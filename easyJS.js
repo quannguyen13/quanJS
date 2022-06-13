@@ -435,7 +435,40 @@ function addUp(number) {
     console.log(sum);
 }
 
-addUp(4)
-addUp(13)
-addUp(500)
-addUp(600)
+// addUp(4)
+// addUp(13)
+// addUp(500)
+// addUp(600)
+
+
+
+// Create a function that accepts a string of space separated numbers and returns the highest and lowest number (as a string).
+// resource: https://bobbyhadz.com/blog/javascript-convert-array-of-strings-to-array-of-numbers#:~:text=To%20convert%20an%20array%20of%20strings%20to%20an%20array%20of%20numbers%3A&text=Use%20the%20forEach()%20method,it%20to%20the%20numbers%20array.
+// Examples
+// highLow("1 2 3 4 5") ➞ "5 1"
+
+// highLow("1 2 -3 4 5") ➞ "5 -3"
+
+// highLow("1 9 3 4 -5") ➞ "9 -5"
+
+// highLow("13") ➞ "13 13"
+
+
+function highLow(str) {
+    var newArray = []
+    var edit = str.split(" ").join("").split("")
+    console.log(edit);
+    edit.forEach(e => newArray.push(Number(e)))
+    // console.log(newArray);
+    var a = Math.max(...newArray)
+    var b = Math.min(...newArray)
+    // console.log(a);
+    // console.log(b);
+    var newArray2 = [a, b]
+    var convertToString = newArray2.toString().split(",").join(" ")
+    // console.log(convertToString);
+}
+// highLow("1 2 3 4 5")
+highLow("1 2 -3 4 5")
+// highLow("1 9 3 4 -5")
+// highLow("13")
