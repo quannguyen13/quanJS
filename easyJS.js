@@ -464,11 +464,11 @@ function highLow(str) {
     var b = Math.min(...newArray)
     // console.log(a);
     // console.log(b);
-    var newArray2 = [a, b]
-    var convertToString = newArray2.toString().split(",").join(" ")
+    var newArray2 = [b, a]
+    var convertToString = newArray2.sort((x, y) => y - x).toString().split(",").join(" ")
     console.log(convertToString);
 }
 highLow("1 2 3 4 5")
 highLow("1 2 -3 4 5")
 highLow("1 9 3 4 -5")
-// highLow("13")
+highLow("13")
