@@ -420,3 +420,21 @@ function testRun2(a, b ,c) {
     }
 }
 // testRun2()
+
+
+// Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+
+function addUp(number) {
+    var newArray = []
+    for (let i = 1; i <= number ; i++) {
+        const element = i;
+        newArray.push(element)
+    }
+    // console.log(newArray);
+    var sum = newArray.reduce((a, b) => a + b, 0)
+    console.log(sum);
+}
+
+addUp(4)
+addUp(13)
+addUp(600)

@@ -75,9 +75,9 @@ var result =
 // isPrimPythTriple([7, 12, 13])
 // isPrimPythTriple([8, 12, 14])
 // isPrimPythTriple([5, 12, 13])
-// isPrimPythTriple([39, 15, 36])
+isPrimPythTriple([39, 15, 36])
 // isPrimPythTriple([77, 36, 85])
-isPrimPythTriple([77, 36, 44])
+// isPrimPythTriple([77, 36, 44])
 console.log(result);
 
 

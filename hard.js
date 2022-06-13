@@ -72,5 +72,5 @@ function topOne(array) {
 
      
 }
-// console.log(topOne(result));
+console.log(topOne(result));
 
