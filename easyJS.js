@@ -443,6 +443,7 @@ function addUp(number) {
 
 
 // Create a function that accepts a string of space separated numbers and returns the highest and lowest number (as a string).
+//? challenge: https://edabit.com/challenge/PBXe4hLP3mbbMEFt8
 // resource: https://bobbyhadz.com/blog/javascript-convert-array-of-strings-to-array-of-numbers#:~:text=To%20convert%20an%20array%20of%20strings%20to%20an%20array%20of%20numbers%3A&text=Use%20the%20forEach()%20method,it%20to%20the%20numbers%20array.
 // Examples
 // highLow("1 2 3 4 5") ➞ "5 1"
@@ -468,7 +469,21 @@ function highLow(str) {
     var convertToString = newArray2.sort((x, y) => y - x).toString().split(",").join(" ")
     console.log(convertToString);
 }
-highLow("1 2 3 4 5")
-highLow("1 2 -3 4 5")
-highLow("1 9 3 4 -5")
-highLow("13")
+// highLow("1 2 3 4 5")
+// highLow("1 2 -3 4 5")
+// highLow("1 9 3 4 -5")
+// highLow("13")
+
+
+// Create a function that returns the mean of all digits.
+function mean(number)   {
+    var newArray = []    
+    var str = number.toString().split("")
+    str.forEach(e => newArray.push(Number(e)))
+    // console.log(newArray);
+    var meanNumber = (newArray.reduce((a, b) => a + b)) / newArray.length
+    console.log(meanNumber);
+}
+mean(42)
+mean(12345)
+mean(666)
