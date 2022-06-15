@@ -92,3 +92,14 @@ afterNYears({
     "Susan" : 33,
     "Julian" : 13
   }, 1)
+afterNYears({
+    "Baby" : 2,
+    "Child" : 8,
+    "Teenager" : 15,
+    "Adult" : 25,
+    "Elderly" : 71
+  }, 19)
+afterNYears({
+    "Genie" : 1000,
+    "Joe" : 40
+  }, 5)
