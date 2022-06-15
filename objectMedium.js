@@ -69,3 +69,22 @@ function colorPatternTimes(array) {
 
 // https://edabit.com/challenge/b7iHQDw72zzkmgCun
 
+
+
+// Write a function that creates an object with each (key, value) pair being the (lower case, upper case) versions of a letter, respectively.
+// Examples
+// mapping(["p", "s"]) ➞ { "p": "P", "s": "S" }
+
+// mapping(["a", "b", "c"]) ➞ { "a": "A", "b": "B", "c": "C" }
+
+// mapping(["a", "v", "y", "z"]) ➞ { "a": "A", "v": "V", "y": "Y", "z": "Z" }
+
+function mapping(array) {
+    var map = array.map(e => e.toUpperCase())
+    var key = Object.keys(array)
+    var value = Object.values(map)
+    console.log(value);
+    console.log(key);
+}
+
+mapping(["p", "s"])

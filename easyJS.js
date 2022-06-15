@@ -498,7 +498,7 @@ function mean(number)   {
 
 
 // Create a function that takes an array of numbers between 1 and 10 (excluding one number) and returns the missing number.
-
+// ? https://edabit.com/challenge/rgdT9sZ4QhsKhaSw9
 // Examples
 // missingNum([1, 2, 3, 4, 6, 7, 8, 9, 10]) ➞ 5
 
@@ -510,5 +510,5 @@ function missingNum(array) {
     
 
 
-    
+
 }
