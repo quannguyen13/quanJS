@@ -70,21 +70,25 @@ function colorPatternTimes(array) {
 // https://edabit.com/challenge/b7iHQDw72zzkmgCun
 
 
-
-// Write a function that creates an object with each (key, value) pair being the (lower case, upper case) versions of a letter, respectively.
-// Examples
-// mapping(["p", "s"]) ➞ { "p": "P", "s": "S" }
-
-// mapping(["a", "b", "c"]) ➞ { "a": "A", "b": "B", "c": "C" }
-
-// mapping(["a", "v", "y", "z"]) ➞ { "a": "A", "v": "V", "y": "Y", "z": "Z" }
-
-function mapping(array) {
-    var map = array.map(e => e.toUpperCase())
-    var key = Object.keys(array)
-    var value = Object.values(map)
-    console.log(value);
-    console.log(key);
+// Given an object of people and their ages, return how old the people would be after n years have passed. Use the absolute value of n.
+// ? https://stackoverflow.com/questions/55360511/how-to-return-a-modified-object-after-updating-all-the-values-in-it
+function afterNYears(obj, num) {
+    // for (let k in obj){
+    //     obj[k] = obj[k] + Math.abs(num)
+    //    }
+       
+    //    console.log(obj)
+    for (let [key, value] of Object.entries(obj)) {
+        obj[key] = value + Math.abs(num);
+      }
+      
+      console.log(obj);
 }
 
-mapping(["p", "s"])
+afterNYears({
+    "Joel" : 32,
+    "Fred" : 44,
+    "Reginald" : 65,
+    "Susan" : 33,
+    "Julian" : 13
+  }, 1)
