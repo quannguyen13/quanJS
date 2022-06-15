@@ -103,3 +103,11 @@ function afterNYears(obj, num) {
 //     "Genie" : 1000,
 //     "Joe" : 40
 //   }, 5)
+
+
+//?? https://stackoverflow.com/questions/4215737/convert-array-to-object?page=1&tab=scoredesc#tab-top
+function mapping(array) {
+    var manipulate = array.reduce((a, v) => ({ ...a, [v]: `"${v}"`.toUpperCase()}), {})
+    console.log(manipulate);
+}
+mapping(["p", "s"])
