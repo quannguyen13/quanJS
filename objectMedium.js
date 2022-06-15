@@ -106,6 +106,7 @@ function afterNYears(obj, num) {
 
 
 //?? https://stackoverflow.com/questions/4215737/convert-array-to-object?page=1&tab=scoredesc#tab-top
+// ? https://attacomsian.com/blog/javascript-convert-array-to-object
 // https://edabit.com/challenge/5Yt2CrYdrJvoJFHRt
 function mapping(array) {
     // var manipulate = array.reduce((a, v) => ({ ...a, [`"${v}"`]: v.toUpperCase()}), {})
@@ -119,5 +120,6 @@ function mapping(array) {
     }
     // print object
     console.log(obj);
+
 }
 mapping(["p", "s"])
