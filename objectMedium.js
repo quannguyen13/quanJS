@@ -213,6 +213,24 @@ function intWithinBounds() {
         const element = arguments[i];
         newArray.push(element)
     }
-    console.log(newArray);
+    var sort = newArray.sort()
+    console.log(sort);
+    for (let j = 1; j <= sort.length; j++) {
+        if (sort[0] <= sort[j] && sort[j] < sort[sort.length - 1]) {
+            return true
+        }
+        else {
+            return false
+        }
+        
+    }
 }
-intWithinBounds(3, 1, 9)
+// console.log(
+//     intWithinBounds(3, 1, 9)
+// );
+// console.log(
+//     intWithinBounds(6, 1, 6)
+// );
+console.log(
+    intWithinBounds(4.5, 3, 8)
+);
