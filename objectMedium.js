@@ -112,14 +112,8 @@ function mapping(array) {
     // var manipulate = array.reduce((a, v) => ({ ...a, [`"${v}"`]: v.toUpperCase()}), {})
     // console.log(manipulate);
 
-    const obj = {};
-
-    // copy array elements to th object
-    for (let i = 0; i < array.length; i++) {
-        obj[i] = array[i].toUpperCase();
-    }
-    // print object
-    console.log(obj);
+var manipulate = array.reduce((p, c) => {p[c] = c.toUpperCase(); return p}, {})
+    console.log(manipulate);
 
 }
 mapping(["p", "s"])
