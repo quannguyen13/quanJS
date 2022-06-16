@@ -215,7 +215,7 @@ function intWithinBounds() {
         newArray.push(element)
     }
     var sort = newArray.sort()
-    console.log(sort);
+    // console.log(sort);
     for (let j = 1; j <= sort.length; j++) {
         if (sort[0] <= sort[j] && sort[j] < sort[sort.length - 1] && Number.isInteger(sort[j])) {
             return true
@@ -226,12 +226,12 @@ function intWithinBounds() {
         
     }
 }
-// console.log(
-//     intWithinBounds(3, 1, 9)
-// );
-// console.log(
-//     intWithinBounds(6, 1, 6)
-// );
+console.log(
+    intWithinBounds(3, 1, 9)
+);
+console.log(
+    intWithinBounds(6, 1, 6)
+);
 console.log(
     intWithinBounds(4.5, 3, 8)
 );
