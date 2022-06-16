@@ -127,6 +127,7 @@ var manipulate = array.reduce((p, c) => {p[c] = c.toUpperCase(); return p}, {})
 // Arrays can be mixed with various types. Your task for this challenge is to sum all the number elements in the given array. Create a function that takes an array and returns the sum of all numbers in the array.
 // ? https://edabit.com/challenge/PWqkt9HiLcJSr6QEY
 // ? https://stackoverflow.com/questions/53036177/javascript-check-if-an-array-element-is-a-number
+// ? https://stackoverflow.com/questions/23359173/javascript-reduce-an-empty-array
 
 // Examples
 // numbersSum([1, 2, "13", "4", "645"]) ➞ 3
