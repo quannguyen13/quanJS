@@ -200,6 +200,7 @@ function isSpecialArray(array) {
 
 // Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
 // ? https://edabit.com/challenge/YT2kXSMEtACPPk35R
+// ? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
 // Examples
 // intWithinBounds(3, 1, 9) ➞ true
 
@@ -216,7 +217,7 @@ function intWithinBounds() {
     var sort = newArray.sort()
     console.log(sort);
     for (let j = 1; j <= sort.length; j++) {
-        if (sort[0] <= sort[j] && sort[j] < sort[sort.length - 1]) {
+        if (sort[0] <= sort[j] && sort[j] < sort[sort.length - 1] && Number.isInteger(sort[j])) {
             return true
         }
         else {
