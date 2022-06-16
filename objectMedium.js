@@ -116,4 +116,5 @@ var manipulate = array.reduce((p, c) => {p[c] = c.toUpperCase(); return p}, {})
     console.log(manipulate);
 
 }
-mapping(["p", "s"])
+// mapping(["p", "s"])
+mapping(["a", "v", "y", "z"])
