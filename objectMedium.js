@@ -178,12 +178,12 @@ function isSpecialArray(array) {
             oddIndex.push(array[j]);
         }
     }
-    console.log(evenIndex);
-    console.log(oddIndex);
+    // console.log(evenIndex);
+    // console.log(oddIndex);
     var even = evenIndex.every(e => e % 2 == 0)
     var odd = oddIndex.every(e => e % 2 == 1)
-    console.log(even);
-    console.log(odd);
+    // console.log(even);
+    // console.log(odd);
     if (even == true && odd == true) {
         console.log(true);
     } else {
@@ -192,5 +192,5 @@ function isSpecialArray(array) {
 }
 
 isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3])
-// isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3])
-// isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3])
+isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3])
+isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3])
