@@ -191,6 +191,28 @@ function isSpecialArray(array) {
     }
 }
 
-isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3])
-isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3])
-isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3])
+// isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3])
+// isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3])
+// isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3])
+
+
+
+
+// Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
+// ? https://edabit.com/challenge/YT2kXSMEtACPPk35R
+// Examples
+// intWithinBounds(3, 1, 9) ➞ true
+
+// intWithinBounds(6, 1, 6) ➞ false
+
+// intWithinBounds(4.5, 3, 8) ➞ false
+
+function intWithinBounds() {
+    var newArray = []
+    for (let i = 0; i < arguments.length; i++) {
+        const element = arguments[i];
+        newArray.push(element)
+    }
+    console.log(newArray);
+}
+intWithinBounds(3, 1, 9)
