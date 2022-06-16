@@ -166,12 +166,31 @@ function numbersSum(array) {
 
 
 function isSpecialArray(array) {
+    var evenIndex = []
+    var oddIndex = []
     for (let i = 0; i < array.length; i++) {
         if (i % 2 == 0){
-            console.log(array[i]);
+            evenIndex.push(array[i]);
         }
+    }
+    for (let j = 0; j < array.length; j++) {
+        if (j % 2 == 1){
+            oddIndex.push(array[j]);
+        }
+    }
+    console.log(evenIndex);
+    console.log(oddIndex);
+    var even = evenIndex.every(e => e % 2 == 0)
+    var odd = oddIndex.every(e => e % 2 == 1)
+    console.log(even);
+    console.log(odd);
+    if (even == true && odd == true) {
+        console.log(true);
+    } else {
+        console.log(false);
     }
 }
 
-// isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3])
-isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3])
+isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3])
+// isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3])
+// isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3])
