@@ -226,13 +226,12 @@ function intWithinBounds() {
         
     }
 }
-console.log(
-    intWithinBounds(3, 1, 9)
-);
-console.log(
-    intWithinBounds(6, 1, 6)
-);
-console.log(
-    intWithinBounds(4.5, 3, 8)
-);
-// 
+// console.log(
+//     intWithinBounds(3, 1, 9)
+// );
+// console.log(
+//     intWithinBounds(6, 1, 6)
+// );
+// console.log(
+//     intWithinBounds(4.5, 3, 8)
+// );
