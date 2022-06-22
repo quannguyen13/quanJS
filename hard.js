@@ -72,5 +72,48 @@ function topOne(array) {
 
      
 }
-console.log(topOne(result));
+// console.log(topOne(result));
+
+function longestWord(str){
+var split = str.split(" ")
+console.log(split);
+// option 1
+var lgth = 0;
+var longest;
+for (var i = 0; i < split.length; i++) {
+  if (split[i].length > lgth) {
+    var lgth = split[i].length;
+    longest = split[i];
+  }
+}
+console.log(longest);
+
+
+// option 2
+// var longest = split.reduce((a, b) => a.length > b.length ? a : b )
+// var longest = split.sort((a, b) => b.length - a.length)[0]
+// console.log(longest);
+}
+// longestWord("Nancy is very pretty.")
+
+
+function longestWord2() {
+    var newArray = []
+    for (let j = 0; j < arguments.length; j++) {
+        const element = arguments[j];
+        newArray.push(element)
+    }
+    console.log(newArray);
+    // var longest = newArray.sort((a, b) => b.length - a.length)[0]
+    // console.log(longest);
+    var longest
+    for (let j = 0; j < newArray.length; j++) {
+        if (newArray[j] !== newArray[j + 1] && newArray[j + 1] !== undefined) {
+            longest = newArray[j]; 
+            
+        }
+    }
+    console.log(longest);
+}
+// longestWord2('first item', 'second item is longer than the third one', 'third longish item')
 
