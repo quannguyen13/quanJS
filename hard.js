@@ -117,3 +117,28 @@ function longestWord2() {
 }
 // longestWord2('first item', 'second item is longer than the third one', 'third longish item')
 
+
+
+
+
+//? https://edabit.com/challenge/TkmZmXjTjiiu2iCjF
+function getKeyByValue(object, value) {
+    return Object.keys(object).find(key => object[key] === value);
+}
+function awardPrizes(obj, array) {
+    var array = ["Gold", "Silver", "Bronze"]
+    var values = Object.values(obj)
+    // console.log(values);
+    var max = Math.max(...values)
+    if (max) {
+        console.log(getKeyByValue(obj, array[0]));
+    }
+}
+
+
+awardPrizes({
+    "Joshua" : 45,
+    "Alex" : 39,
+    "Eric" : 43
+  })
+// 
