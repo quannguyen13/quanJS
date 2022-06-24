@@ -122,24 +122,62 @@ function longestWord2() {
 
 
 //? https://edabit.com/challenge/TkmZmXjTjiiu2iCjF
-function getKeyByValue(object, value) {
-    return Object.keys(object).find(key => object[key] === value);
-}
-function awardPrizes(obj, array) {
-    var array = ["Gold", "Silver", "Bronze"]
+// ? convert object to array with key - value : 
+// ? https://stackoverflow.com/questions/62829402/how-to-convert-object-a-to-an-array-of-objects-with-object-as-properties-and-as
+// function getKeyByValue(object, value) {
+//     return Object.keys(object).find(key => object[key] === value);
+// }
+function awardPrizes(obj) {
+    // console.log(obj);
+    var array = ["Gold", "Silver", "Bronze", "Participation"]
+    var convertToArray = Object.entries(obj).map(([name, score]) => ({name, score}))
+    // console.log(convertToArray);
+   
+    var keys = Object.keys(obj)
+    // console.log(keys);
     var values = Object.values(obj)
     // console.log(values);
+    // console.log(values.sort((a, b) => b - a));
+
+
     var max = Math.max(...values)
-    if (max) {
-        console.log(getKeyByValue(obj, array[0]));
+    var medium = values.sort((a, b) => b - a)[1]
+    var third = values.sort((a, b) => b - a)[2]
+    // console.log(medium);
+    // console.log(third);
+
+    for (const i of convertToArray) {
+        if(i.score == max ) {
+            i.score = array[0]
+        
+        }
+        if(i.score == medium ) {
+            i.score = array[1]
+        
+        }
+        if(i.score == third ) {
+            i.score = array[2]
+        
+        }
+        if(i.score < third ) {
+            i.score = array[3]
+        }
     }
+    console.log(Object.fromEntries(convertToArray));
+    
+
 }
 
 
+// awardPrizes({
+//         "Joshua" : 45,
+//         "Alex" : 39,
+//         "Eric" : 43
+//       })
 awardPrizes({
-    "Joshua" : 45,
-    "Alex" : 39,
-    "Eric" : 43
-  })
-
-// 
+        "Person A" : 1,
+        "Person B" : 2,
+        "Person C" : 3,
+        "Person D" : 4,
+        "Person E" : 102
+      })

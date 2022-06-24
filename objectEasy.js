@@ -340,7 +340,7 @@ function toArray(obj) {
     var convert = Object.entries(obj)
     console.log(convert);
 }
-// toArray({ a: 1, b: 2 })
+toArray({ a: 1, b: 2 })
 // toArray({ piano: 500 }, "Brutus", 400)
 
 function getKeyByValue(object, value) {
@@ -430,4 +430,4 @@ var obj2 = {
 //     phone: "9853759720",
 //     email: "jason@edabit.com"
 //   }
-console.log(comparison(obj1, obj2));
+// console.log(comparison(obj1, obj2));
