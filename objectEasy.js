@@ -431,4 +431,3 @@ var obj2 = {
 //     email: "jason@edabit.com"
 //   }
 // console.log(comparison(obj1, obj2));
-// q
