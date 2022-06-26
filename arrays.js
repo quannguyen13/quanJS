@@ -94,4 +94,3 @@
  * the foods array and adds the current item to the favoriteFoods array if the
  * string is longer than 6 characters (i.e. string.length > 6).
  */
-// 
