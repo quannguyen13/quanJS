@@ -92,11 +92,11 @@ function isExactlyThree(number){
 // isExactlyThree(6)
 
 
-function canNest(array1, array2){
-    var arr1Min = Math.min(...array1)
-    var arr1Max = Math.max(...array1)
-    var arr2Min = Math.min(...array2)
-    var arr2Max = Math.max(...array2)
+function canNest(arr1, arr2){
+    var arr1Min = Math.min(...arr1)
+    var arr1Max = Math.max(...arr1)
+    var arr2Min = Math.min(...arr2)
+    var arr2Max = Math.max(...arr2)
     if (arr1Min > arr2Min && arr1Max < arr2Max) {
         return true
     } else {
@@ -512,3 +512,22 @@ function missingNum(array) {
 
 
 }
+
+
+// Create a function that takes two arrays and insert the second array in the middle of the first array.
+
+function tuckIn() {
+    var newArray = []
+    for (let i = 0; i < arguments.length; i++) {
+        const element = arguments[i];
+        newArray.push(element)
+    }
+
+    console.log(newArray);
+    // console.log([].concat(...arr));
+    const mergeResult = [...array1, ...array2, ...array3, ...arrayN]
+    console.log(mergeResult);
+}
+// tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9])
+// tuckIn([15,150], [45, 75, 35])
+tuckIn([[1, 2], [5, 6]], [[3, 4]])
