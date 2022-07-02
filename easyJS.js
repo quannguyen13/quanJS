@@ -515,19 +515,22 @@ function missingNum(array) {
 
 
 // Create a function that takes two arrays and insert the second array in the middle of the first array.
-
+// ? flat() method
+// ? https://stackoverflow.com/questions/10865025/merge-flatten-an-array-of-arrays
+// ? https://stackoverflow.com/questions/5080028/what-is-the-most-efficient-way-to-concatenate-n-arrays
 function tuckIn() {
     var newArray = []
     for (let i = 0; i < arguments.length; i++) {
         const element = arguments[i];
         newArray.push(element)
     }
-
-    console.log(newArray);
-    // console.log([].concat(...arr));
-    const mergeResult = [...array1, ...array2, ...array3, ...arrayN]
-    console.log(mergeResult);
+    // console.log(newArray);
+    var merged = newArray.flat(Infinity)
+    var sort = merged.sort((a, b) => a - b)
+    // console.log(merged);
+    console.log(sort);
 }
-// tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9])
+// tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9], [11, 12, 13, 14, 15])
 // tuckIn([15,150], [45, 75, 35])
-// tuckIn([[1, 2], [5, 6]], [[3, 4]])
+tuckIn([[1, 2], [5, 6]], [[3, 4]], [[[7, 8, 9, 10]]], [[[[11, 12], [13, 14, 15]]]])
+tuckIn([[1, 2], [5, 6]], [[3, 4]])
