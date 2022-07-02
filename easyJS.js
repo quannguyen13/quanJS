@@ -534,3 +534,21 @@ function tuckIn() {
 // tuckIn([15,150], [45, 75, 35])
 // tuckIn([[1, 2], [5, 6]], [[3, 4]], [[[7, 8, 9, 10]]], [[[[11, 12], [13, 14, 15]]]])
 // tuckIn([[1, 2], [5, 6]], [[3, 4]])
+
+
+
+function acceptIntoMovie(age, isSupervised) {
+    if (age < 15 && isSupervised == true) {
+        console.log(true);
+    }
+    else if (age >= 15 && isSupervised == false || isSupervised == true ) {
+        console.log(true);
+    } 
+    else {
+        console.log(false);
+    }
+}
+
+acceptIntoMovie(14, true)
+acceptIntoMovie(14, false)
+acceptIntoMovie(16, false)
