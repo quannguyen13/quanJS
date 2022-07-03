@@ -549,6 +549,27 @@ function acceptIntoMovie(age, isSupervised) {
     }
 }
 
-acceptIntoMovie(14, true)
-acceptIntoMovie(14, false)
-acceptIntoMovie(16, false)
+// acceptIntoMovie(14, true)
+// acceptIntoMovie(14, false)
+// acceptIntoMovie(16, false)
+
+
+
+
+// write a function return another function ( function inside function )
+// Write a function redundant that takes in a string str and returns a function that returns str.
+// ? https://edabit.com/challenge/hzxN9bAebBPNqdQto
+// ? https://stackoverflow.com/questions/55905677/how-to-call-a-function-that-returns-another-function-in-javascript
+function redundant(str) {
+    var a = str
+        return function() {
+            console.log(`"${a}"`);
+    }
+}
+    
+const f1 = redundant("apple")
+f1() 
+const f2 = redundant("pear")
+f2()
+const f3 = redundant("")
+f3()
