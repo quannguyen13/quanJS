@@ -588,3 +588,21 @@ function sortIt(arr) {
 // sortIt([[4], [1], [3]])
 // sortIt([[4], 1, [3]])
 // sortIt([[3], 4, [2], [5], 1, 6])
+
+
+function ascDesNone(array, str) {
+    if (str == "Asc") {
+        array.sort((a, b) => a - b)
+    } 
+    else if (str == "Des") {
+        array.sort((a, b) => b - a)   
+    }
+    else {
+        null
+    }
+    console.log(array);
+}
+ascDesNone([4, 3, 2, 1], "Asc" )
+ascDesNone([7, 8, 11, 66], "Des") 
+ascDesNone([1, 2, 3, 4], "None")
+ascDesNone([1, 5, 3, 9, 7, 11, 19, 13], "None")
