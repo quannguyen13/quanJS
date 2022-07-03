@@ -583,8 +583,8 @@ function sortIt(arr) {
     var sorting = arr.sort((a, b) => a - b)
     console.log(sorting);
 }
-sortIt([4, 1, 3])
-sortIt([4, [1], 3])
-sortIt([[4], [1], [3]])
-sortIt([[4], 1, [3]])
-sortIt([[3], 4, [2], [5], 1, 6])
+// sortIt([4, 1, 3])
+// sortIt([4, [1], 3])
+// sortIt([[4], [1], [3]])
+// sortIt([[4], 1, [3]])
+// sortIt([[3], 4, [2], [5], 1, 6])
