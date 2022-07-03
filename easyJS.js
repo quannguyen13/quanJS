@@ -567,9 +567,21 @@ function redundant(str) {
     }
 }
     
-const f1 = redundant("apple")
-f1() 
-const f2 = redundant("pear")
-f2()
-const f3 = redundant("")
-f3()
+// const f1 = redundant("apple")
+// f1() 
+// const f2 = redundant("pear")
+// f2()
+// const f3 = redundant("")
+// f3()
+
+
+function sortIt(arr) {
+
+    var sorting = arr.sort((a, b) => a - b)
+    console.log(sorting);
+}
+sortIt([4, 1, 3])
+sortIt([4, [1], 3])
+sortIt([[4], [1], [3]])
+sortIt([[4], 1, [3]])
+sortIt([[3], 4, [2], [5], 1, 6])
