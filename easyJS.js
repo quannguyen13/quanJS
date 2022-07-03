@@ -615,7 +615,30 @@ function allTruthy() {
         
     }
     console.log(newArray);
-    var check = newArray.every(e => e == Number(e) || e == true ? true : false)
-    console.log(newArray);
+    for (let j of newArray) {
+        if (j !== 0 || j === true) {
+            return true
+            // console.log(true);
+        }
+        // else if (newArray[j] === 0 || newArray[j] == false ) {
+        //     return false
+        //     // console.log(false);
+        // }
+
+        else {
+            return false
+        }
+    }
 }
-allTruthy(true, true, true)
+// console.log(
+
+//     allTruthy(true, true, true)
+// );
+// console.log(
+
+//     allTruthy(true, false, true)
+// );
+console.log(
+
+    allTruthy(5, 4, 3, 2, 1, 7, 0)
+);
