@@ -606,3 +606,16 @@ function ascDesNone(array, str) {
 // ascDesNone([7, 8, 11, 66], "Des") 
 // ascDesNone([1, 2, 3, 4], "None")
 // ascDesNone([1, 5, 3, 9, 7, 11, 19, 13], "None")
+
+
+function allTruthy() {
+    var newArray = []
+    for (let i = 0; i < arguments.length; i++) {
+        newArray.push(arguments[i])
+        
+    }
+    console.log(newArray);
+    var check = newArray.every(e => e == Number(e) || e == true ? true : false)
+    console.log(newArray);
+}
+allTruthy(true, true, true)
