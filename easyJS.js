@@ -602,7 +602,7 @@ function ascDesNone(array, str) {
     }
     console.log(array);
 }
-ascDesNone([4, 3, 2, 1], "Asc" )
-ascDesNone([7, 8, 11, 66], "Des") 
-ascDesNone([1, 2, 3, 4], "None")
-ascDesNone([1, 5, 3, 9, 7, 11, 19, 13], "None")
+// ascDesNone([4, 3, 2, 1], "Asc" )
+// ascDesNone([7, 8, 11, 66], "Des") 
+// ascDesNone([1, 2, 3, 4], "None")
+// ascDesNone([1, 5, 3, 9, 7, 11, 19, 13], "None")
