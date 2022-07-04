@@ -609,7 +609,9 @@ function ascDesNone(array, str) {
 
 
 
-
+// Create a function that returns true if all parameters are truthy, and false otherwise.
+// Falsy values include false, 0, "" (empty string), null, undefined, and NaN; everything else is truthy.
+// You will always be supplied with at least one parameter.
 
 // ? https://edabit.com/challenge/ttiutYw6NyphfxuCG
 
@@ -625,7 +627,7 @@ function allTruthy() {
     var check2 = newArray.some(e => typeof(e) == "number")
     // console.log(check2);
 
-    if (check1|| check2) {
+    if (check1 || check2) {
         
         for (let j = 0; j < newArray.length; j++) {
             const element = newArray[j];
@@ -635,13 +637,17 @@ function allTruthy() {
                 
             }
             if (typeof(element) == "number") {
+                if(newArray.every(e => e !== 0)){
+                    return true
+                }
                 if (element == !NaN) {
                     return newArray.every(e => e == 0 ? false : true)                
                 } else {
                     return false
+
                 }
-                
-            }   
+            }
+
             
         }
     } else {
@@ -653,13 +659,12 @@ function allTruthy() {
 // var result = allTruthy(true, true, true, undefined)
 // var result = allTruthy(true, true, true, null)
 // var result = allTruthy(true, true, true, " ")
-var result = allTruthy(true, false, true)
-// var result = allTruthy(5, 4, 3, 2, 1, 7, 0)
+// var result = allTruthy(true, false, true)
+var result = allTruthy(5, 4, 3, 2, 1, 7, 0)
 // var result = allTruthy(5, 4, 3, 2, 1, 7)
 // var result = allTruthy(5, 4, 3, 2, 1, " ")
 // var result = allTruthy(5, 4, 3, 2, 1, NaN)
 // var result = allTruthy(5, 4, 3, 2, 1, undefined)
 // var result = allTruthy(5, 4, 3, 2, 1, null)
 console.log(result);
-var test = NaN
-// console.log(typeof(test));
+
