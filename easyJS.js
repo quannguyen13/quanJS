@@ -608,6 +608,11 @@ function ascDesNone(array, str) {
 // ascDesNone([1, 5, 3, 9, 7, 11, 19, 13], "None")
 
 
+
+
+
+// ? https://edabit.com/challenge/ttiutYw6NyphfxuCG
+
 function allTruthy() {
     var newArray = []
     for (let i = 0; i < arguments.length; i++) {
@@ -615,30 +620,30 @@ function allTruthy() {
         
     }
     console.log(newArray);
-    for (let j of newArray) {
-        if (j !== 0 || j === true) {
-            return true
-            // console.log(true);
-        }
-        // else if (newArray[j] === 0 || newArray[j] == false ) {
-        //     return false
-        //     // console.log(false);
-        // }
-
-        else {
-            return false
-        }
-    }
+    // for (let j = 0; j < newArray.length; j++) {
+    //     const element = newArray[j];
+    //     if (element == 0) {
+    //         return false
+    //     }
+    //     else {
+    //         return true
+    //     }
+    // }
+    var check = newArray.every(e => e == true)
+    // var check2 = newArray.every(e => e == 0)
+    console.log(check);
+    // console.log(check2);
 }
 // console.log(
 
-//     allTruthy(true, true, true)
+    // allTruthy(true, true, true)
 // );
 // console.log(
 
-//     allTruthy(true, false, true)
+    allTruthy(true, false, true)
 // );
-console.log(
+// console.log(
 
-    allTruthy(5, 4, 3, 2, 1, 7, 0)
-);
+//     allTruthy(5, 4, 3, 2, 1, 7, 0)
+//     );
+    allTruthy(5, 4, 3, 2, 1, 7)
