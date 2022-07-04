@@ -650,12 +650,16 @@ function allTruthy() {
 }
 // var result = allTruthy(true, true, true)
 // var result = allTruthy(true, true, true, NaN)
-var result = allTruthy(true, true, true, NaN)
-// var result = allTruthy(true, false, true)
+// var result = allTruthy(true, true, true, undefined)
+// var result = allTruthy(true, true, true, null)
+// var result = allTruthy(true, true, true, " ")
+var result = allTruthy(true, false, true)
 // var result = allTruthy(5, 4, 3, 2, 1, 7, 0)
 // var result = allTruthy(5, 4, 3, 2, 1, 7)
 // var result = allTruthy(5, 4, 3, 2, 1, " ")
 // var result = allTruthy(5, 4, 3, 2, 1, NaN)
+// var result = allTruthy(5, 4, 3, 2, 1, undefined)
+// var result = allTruthy(5, 4, 3, 2, 1, null)
 console.log(result);
 var test = NaN
 // console.log(typeof(test));
