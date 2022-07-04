@@ -625,29 +625,37 @@ function allTruthy() {
     var check2 = newArray.some(e => typeof(e) == "number")
     // console.log(check2);
 
-    if (check1 || check2) {
-            for (let j = 0; j < newArray.length; j++) {
-                const element = newArray[j];
-                
-                if (typeof(element) == "boolean") {
-                    return newArray.every(e => e === true ? true : false)
-                    
-                }
-                if (typeof(element) == "number") {
-                    return newArray.every(e => e == 0 ? false : true)
-                    
-                }         
+    if (check1|| check2) {
+        
+        for (let j = 0; j < newArray.length; j++) {
+            const element = newArray[j];
+            
+            if (typeof(element) == "boolean") {
+                return newArray.every(e => e === true ? true : false)
                 
             }
+            if (typeof(element) == "number") {
+                if (element == !NaN) {
+                    return newArray.every(e => e == 0 ? false : true)                
+                } else {
+                    return false
+                }
+                
+            }   
+            
+        }
     } else {
         return false
     }
 }
-var result = allTruthy(true, true, true)
+// var result = allTruthy(true, true, true)
+// var result = allTruthy(true, true, true, NaN)
+var result = allTruthy(true, true, true, NaN)
 // var result = allTruthy(true, false, true)
 // var result = allTruthy(5, 4, 3, 2, 1, 7, 0)
 // var result = allTruthy(5, 4, 3, 2, 1, 7)
 // var result = allTruthy(5, 4, 3, 2, 1, " ")
+// var result = allTruthy(5, 4, 3, 2, 1, NaN)
 console.log(result);
-var test = " "
+var test = NaN
 // console.log(typeof(test));
