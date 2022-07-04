@@ -620,30 +620,21 @@ function allTruthy() {
         
     }
     console.log(newArray);
-    // for (let j = 0; j < newArray.length; j++) {
-    //     const element = newArray[j];
-    //     if (element == 0) {
-    //         return false
-    //     }
-    //     else {
-    //         return true
-    //     }
-    // }
-    var check = newArray.every(e => e == true)
-    // var check2 = newArray.every(e => e == 0)
-    console.log(check);
-    // console.log(check2);
+    for (let j = 0; j < newArray.length; j++) {
+        const element = newArray[j];
+        if (typeof(element) == "boolean") {
+            return newArray.every(e => e === true ? true : false)
+            
+        }
+        if (typeof(element) == "number") {
+            return newArray.every(e => e === true ? true : false)
+            
+        }
+     
+    }
+
 }
-// console.log(
-
-    // allTruthy(true, true, true)
-// );
-// console.log(
-
-    allTruthy(true, false, true)
-// );
-// console.log(
-
-//     allTruthy(5, 4, 3, 2, 1, 7, 0)
-//     );
-    allTruthy(5, 4, 3, 2, 1, 7)
+// var result = allTruthy(true, true, true)
+var result = allTruthy(true, false, true)
+// var result = allTruthy(5, 4, 3, 2, 1, 7, 0)
+console.log(result);
