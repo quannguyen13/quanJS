@@ -656,5 +656,5 @@ function allTruthy() {
 var result = allTruthy(5, 4, 3, 2, 1, NaN)
 // var result = allTruthy(5, 4, 3, 2, 1, undefined)
 // var result = allTruthy(5, 4, 3, 2, 1, null)
-// console.log(result);
+console.log(result);
 
