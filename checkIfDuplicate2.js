@@ -20,4 +20,4 @@ var checkIfDuplicate = arr.some((ele, i) => arr.indexOf(ele) !== i)
 // console.log(i);
 // console.log(check(arr));
 
-
+// 
