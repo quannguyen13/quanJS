@@ -759,9 +759,17 @@ function returnEndOfNumber(number) {
     // console.log(check);
     // console.log(check2);
 }
-returnEndOfNumber(553)
-returnEndOfNumber(34)
-returnEndOfNumber(1231)
-returnEndOfNumber(22)
-returnEndOfNumber(412)
+// returnEndOfNumber(553)
+// returnEndOfNumber(34)
+// returnEndOfNumber(1231)
+// returnEndOfNumber(22)
+// returnEndOfNumber(412)
 // returnEndOfNumber(13211)
+
+function test() {
+    var array = Array.from(arguments)
+    var split = array.toString().split("")
+    var numberize = split.map(e => Number(e))
+    console.log(numberize);
+}
+test(56812)
