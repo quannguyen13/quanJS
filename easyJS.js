@@ -653,7 +653,29 @@ function allTruthy() {
 // var result = allTruthy(5, 4, 3, 2, 1, 7, 0)
 // var result = allTruthy(5, 4, 3, 2, 1, 7)
 // var result = allTruthy(5, 4, 3, 2, 1, " ")
-var result = allTruthy(5, 4, 3, 2, 1, NaN)
+// var result = allTruthy(5, 4, 3, 2, 1, NaN)
 // var result = allTruthy(5, 4, 3, 2, 1, undefined)
 // var result = allTruthy(5, 4, 3, 2, 1, null)
 // console.log(result);
+
+
+
+// Create a function that takes a number as its argument and returns an array of all its factors.
+//? https://edabit.com/challenge/zLYbAPk8NMnwoPhjG
+// factorize(12) ➞ [1, 2, 3, 4, 6, 12]
+
+// factorize(4) ➞ [1, 2, 4]
+
+// factorize(17) ➞ [1, 17]
+
+function factorize(number) {
+    var newArray = []
+    for (let i = 0; i < number; i++) {
+        if (number % i == 0) {
+            newArray.push(i)
+        }
+        
+    }
+    console.log(newArray.concat(number));
+}
+factorize(12)
