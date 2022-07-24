@@ -678,4 +678,40 @@ function factorize(number) {
     }
     console.log(newArray.concat(number));
 }
-factorize(12)
+// factorize(12)
+// factorize(4)
+// factorize(17)
+
+
+
+// Create a function that performs an even-odd transform to an array, n times. Each even-odd transformation:
+
+// Adds two (+2) to each odd integer.
+// Subtracts two (-2) from each even integer.
+// ? https://edabit.com/challenge/MsNyn2xmTzRWjFuMT
+// Examples
+// evenOddTransform([3, 4, 9], 3) ➞ [9, -2, 15]
+// Since [3, 4, 9] => [5, 2, 11] => [7, 0, 13] => [9, -2, 15]
+
+// evenOddTransform([0, 0, 0], 10) ➞ [-20, -20, -20]
+
+// evenOddTransform([1, 2, 3], 1) ➞ [3, 0, 5]
+
+function evenOddTransform(array, num) {
+    var newArray = []
+  for (let i = 0; i < array.length; i++) {
+    if (i % 2 == 0) {
+        newArray.push(array[i] + (num * 2))
+    }
+    else {
+        newArray.push(array[i] + (num * -2))
+
+    }
+  }
+  console.log(newArray)
+
+
+}
+evenOddTransform([3, 4, 9], 3)
+evenOddTransform([0, 0, 0], 10)
+evenOddTransform([1, 2, 3], 1)
