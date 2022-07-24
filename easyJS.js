@@ -712,6 +712,6 @@ function evenOddTransform(array, num) {
 
 
 }
-evenOddTransform([3, 4, 9], 3)
-evenOddTransform([0, 0, 0], 10)
-evenOddTransform([1, 2, 3], 1)
+// evenOddTransform([3, 4, 9], 3)
+// evenOddTransform([0, 0, 0], 10)
+// evenOddTransform([1, 2, 3], 1)
