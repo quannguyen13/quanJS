@@ -715,3 +715,53 @@ function evenOddTransform(array, num) {
 // evenOddTransform([3, 4, 9], 3)
 // evenOddTransform([0, 0, 0], 10)
 // evenOddTransform([1, 2, 3], 1)
+
+
+// Create a function that takes an integer and returns it as an ordinal number. An Ordinal Number is a number that tells the position of something in a list, such as 1st, 2nd, 3rd, 4th, 5th, etc.
+// ? https://edabit.com/challenge/MEgXcp8cj3vNvD42v
+// ? https://flexiple.com/get-last-array-element-javascript/
+// ? https://bobbyhadz.com/blog/javascript-split-number-into-array#:~:text=To%20split%20a%20number%20into,The%20Array.
+// Examples
+// returnEndOfNumber(553) ➞ "553-RD"
+
+// returnEndOfNumber(34) ➞ "34-TH"
+
+// returnEndOfNumber(1231) ➞ "1231-ST"
+
+// returnEndOfNumber(22) ➞ "22-ND"
+
+// returnEndOfNumber(412) ➞ "412-TH"
+
+function returnEndOfNumber(number) {
+    var array =  Array.from(String(number), Number);
+    var check = array.pop()
+    var check2 = array.pop(-1)
+    if (check2 == 1) {
+        console.log(`"${number} - TH"`);
+        
+    }
+    else if (check == 1) {
+        console.log(`"${number} - ST"`);
+    }
+
+    else if (check == 2) {
+        console.log(`"${number} - ND"`);
+        
+    }
+
+    else if (check == 3) {
+        console.log(`"${number} - RD"`);
+        
+    }
+    else {
+        console.log(`"${number} - TH"`);
+    }
+    // console.log(check);
+    // console.log(check2);
+}
+returnEndOfNumber(553)
+returnEndOfNumber(34)
+returnEndOfNumber(1231)
+returnEndOfNumber(22)
+returnEndOfNumber(412)
+// returnEndOfNumber(13211)
