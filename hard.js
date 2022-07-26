@@ -174,12 +174,48 @@ function awardPrizes(obj) {
 //         "Alex" : 39,
 //         "Eric" : 43
 //       })
-awardPrizes({
-        "Person A" : 1,
-        "Person B" : 2,
-        "Person C" : 3,
-        "Person D" : 4,
-        "Person E" : 102
-      })
+// awardPrizes({
+//         "Person A" : 1,
+//         "Person B" : 2,
+//         "Person C" : 3,
+//         "Person D" : 4,
+//         "Person E" : 102
+//       })
 
     //   
+
+
+
+
+// Create a function that takes three collections of arguments and returns the sum of the product of numbers.
+// ?https://edabit.com/challenge/95YiRnBSnfzSQWAuu
+// ?https://stackoverflow.com/questions/33696518/javascript-function-that-takes-multiple-sets-of-arguments
+// function product(arg1, arg2) {
+
+//     return function(arg3, arg4) {
+
+//         return function(arg5, arg6) {
+//             var result1 = (arg1 * arg3 * arg5) + (arg2 * arg4 * arg6)
+//             console.log(result1);
+//         }
+        
+//     }
+
+// }
+function product(...arg1) {
+
+    return function(...arg2) {
+
+        return function(...arg3) {
+            var result1 = (arg1[0] * arg2[0] * arg3[0]) + (arg1[1] * arg2[1] * arg3[1])
+            console.log(result1);
+        }
+        
+    }
+
+}
+
+product(1,2)(1,1)(2,3)
+product(10,2)(5,0)(2,3)
+product(1,2)(2,3)(3,4)
+product(1,2)(0,3)(3,0)

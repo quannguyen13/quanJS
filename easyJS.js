@@ -818,4 +818,4 @@ function sum() {
     var sum = array.reduce((a, b) => a + b)
     console.log(sum);
 }
-sum(10,20,40,30,110)
+// sum(10,20,40,30,110)
