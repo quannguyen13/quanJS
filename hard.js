@@ -207,8 +207,8 @@ function product(...arg1) {
     return function(...arg2) {
 
         return function(...arg3) {
-            var result1 = (arg1[0] * arg2[0] * arg3[0]) + (arg1[1] * arg2[1] * arg3[1])
-            console.log(result1);
+            var result2 = (arg1[0] * arg2[0] * arg3[0]) + (arg1[1] * arg2[1] * arg3[1])
+            console.log(result2);
         }
         
     }
