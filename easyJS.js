@@ -811,3 +811,11 @@ function changeEnough2(array, price) {
 // changeEnough2([30, 40, 20, 5], 12.55)
 // changeEnough2([10, 0, 0, 50], 3.85)
 // changeEnough2([1, 0, 5, 219], 19.99)
+
+
+function sum() {
+    var array = Array.from(arguments)
+    var sum = array.reduce((a, b) => a + b)
+    console.log(sum);
+}
+sum(10,20,40,30,110)
