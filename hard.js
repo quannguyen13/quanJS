@@ -186,10 +186,27 @@ function awardPrizes(obj) {
 
 
 
-
+// ! function with multiple arguments
 // Create a function that takes three collections of arguments and returns the sum of the product of numbers.
 // ?https://edabit.com/challenge/95YiRnBSnfzSQWAuu
 // ?https://stackoverflow.com/questions/33696518/javascript-function-that-takes-multiple-sets-of-arguments
+// Examples
+// product(1,2)(1,1)(2,3) ➞ 8
+// 1 * 1 * 2 + 2 * 1 * 3
+
+// product(10,2)(5,0)(2,3) ➞ 100
+// 10 * 5 * 2 + 2 * 0 * 3
+
+// product(1,2)(2,3)(3,4) ➞ 30
+// 1 * 2 * 3 + 2 * 3 * 4
+
+// product(1,2)(0,3)(3,0) ➞ 0
+// 1 * 0 * 3 + 2 * 3 * 0
+
+
+
+
+
 // function product(arg1, arg2) {
 
 //     return function(arg3, arg4) {
@@ -215,7 +232,28 @@ function product(...arg1) {
 
 }
 
-product(1,2)(1,1)(2,3)
-product(10,2)(5,0)(2,3)
-product(1,2)(2,3)(3,4)
-product(1,2)(0,3)(3,0)
+// product(1,2)(1,1)(2,3)
+// product(10,2)(5,0)(2,3)
+// product(1,2)(2,3)(3,4)
+// product(1,2)(0,3)(3,0)
+
+
+
+// Create a function that converts Celsius to Fahrenheit and vice versa.
+
+function convert(str) {
+    var manipulation = str.split("")
+    var numbers = manipulation.slice(0, -2)
+    // var unit = manipulation.splice(-1)
+    var unit = manipulation.pop().toUpperCase()
+    console.log(numbers);
+    console.log(unit);
+    if (unit == "C") {
+        console.log(true);
+    } else {
+        console.log(false);
+        
+    }
+}
+// convert("35°C")
+convert("1353°c")
