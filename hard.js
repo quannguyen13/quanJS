@@ -243,17 +243,25 @@ function product(...arg1) {
 
 function convert(str) {
     var manipulation = str.split("")
-    var numbers = manipulation.slice(0, -2)
+    var numbers = Number(manipulation.slice(0, -2).join(""))
     // var unit = manipulation.splice(-1)
     var unit = manipulation.pop().toUpperCase()
-    console.log(numbers);
-    console.log(unit);
-    if (unit == "C") {
-        console.log(true);
-    } else {
-        console.log(false);
+    // console.log(numbers);
+    // console.log(unit);
+    if (unit == "F") {
+        var convert1 = ((numbers - 32) * 5 / 9).toFixed()
+        console.log(`"${convert1}°C"`);
+    }
+    else if (unit == "C") {
+        var convert2 = ((numbers * 9 / 5) + 32).toFixed()
+        console.log(`"${convert2}°F"`);
+    }
+    else {
+        console.log("Error: NO Temperature Unit Defined");
         
     }
 }
-// convert("35°C")
-convert("1353°c")
+convert("35°C")
+convert("1353°C")
+convert("19°F")
+convert("19")
