@@ -70,19 +70,26 @@ const checkoutPayPal = (user, cost) => {
   // logic to add record
 };
 const checkoutWallet = (user, cost) => {
-  // wallet adjustment
-  // logic to add record
-};
-
+  var newArray = []
+  for ( let i = 0; i < users.length; i++){
+    var user = users[i]
+    var cost = user.wallet
+    newArray.push(cost)
+    // wallet adjustment
+    // logic to add record
+  }
+  var wallets = newArray.filter(e => e > 0)
+  console.log(wallets);
+}
+checkoutWallet()
 
 const callAllCheckouts = () => {
   // Each checkout call should look like this
   // const testUser = users[0];
   // checkout(testUser, 10);
   for ( let i = 0; i < users.length; i++){
-    var element = users[i].id
+    var element = users[i]
     console.log(element);
   }
-    // checkout(users[i], 10);
-};
-callAllCheckouts()
+}
+// callAllCheckouts()
