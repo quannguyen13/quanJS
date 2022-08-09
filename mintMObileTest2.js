@@ -16,6 +16,41 @@
  */
 
 // START HERE
+
+  // Iterate through our users and perform a proper checkout for each
+
+  /** Hypothetical DB of users */
+  const users = [
+    { id: 1, paymentType: "visa", lastFour: "1234", wallet: 20 },
+    { id: 2, paymentType: "masterCard", lastFour: "5678", wallet: 0 },
+    { id: 3, paymentType: "paypal", email: "noemail1@gmail.com", wallet: 0 },
+    { id: 4, paymentType: "paypal", email: "noemail2@gmail.com", wallet: 20 },
+  ];
+  
+  /** Hypothetical DB of stored records */
+  const checkoutRecords = [
+    {
+      userId: 1,
+      userWallet: 10,
+      cost: 10,
+      paymentMethod: "cc",
+      lastFour: "1234",
+    },
+    {
+      userId: 3,
+      userWallet: 0,
+      cost: 10,
+      paymentMethod: "paypal",
+      email: "noemail1@gmail.com",
+    },
+  ];
+  
+
+// for (let i = 0; i < checkoutRecords.length; i++) {
+//   const element = checkoutRecords[i].userWallet;
+//   console.log(element);
+// }
+
 const checkout = (user, cost) => {
   user = { id: 1, paymentType: "visa", lastFour: "1234", wallet: 20 }
   if(user.wallet >= cost){
@@ -26,6 +61,7 @@ const checkout = (user, cost) => {
    * in case wallet covers the cost, use the wallet method for checkout
    * */
 };
+
 
 const checkoutCC = (user, cost) => {
   // logic to add record
@@ -38,38 +74,15 @@ const checkoutWallet = (user, cost) => {
   // logic to add record
 };
 
-// Iterate through our users and perform a proper checkout for each
+
 const callAllCheckouts = () => {
   // Each checkout call should look like this
   // const testUser = users[0];
   // checkout(testUser, 10);
-  for ( i = 0; i < users.lenght; i++){
-    checkout(users[i], 10);
+  for ( let i = 0; i < users.length; i++){
+    var element = users[i].id
+    console.log(element);
   }
+    // checkout(users[i], 10);
 };
-
-/** Hypothetical DB of users */
-const users = [
-  { id: 1, paymentType: "visa", lastFour: "1234", wallet: 20 },
-  { id: 2, paymentType: "masterCard", lastFour: "5678", wallet: 0 },
-  { id: 3, paymentType: "paypal", email: "noemail1@gmail.com", wallet: 0 },
-  { id: 4, paymentType: "paypal", email: "noemail2@gmail.com", wallet: 20 },
-];
-
-/** Hypothetical DB of stored records */
-const checkoutRecords = [
-  {
-    userId: 1,
-    userWallet: 10,
-    cost: 10,
-    paymentMethod: "cc",
-    lastFour: "1234",
-  },
-  {
-    userId: 3,
-    userWallet: 0,
-    cost: 10,
-    paymentMethod: "paypal",
-    email: "noemail1@gmail.com",
-  },
-];
+callAllCheckouts()
