@@ -51,6 +51,9 @@
 //   console.log(element);
 // }
 
+
+
+
 const checkout = (user, cost) => {
   user = { id: 1, paymentType: "visa", lastFour: "1234", wallet: 20 }
   if(user.wallet >= cost){
@@ -62,34 +65,28 @@ const checkout = (user, cost) => {
    * */
 };
 
-
 const checkoutCC = (user, cost) => {
-  // logic to add record
+  if(user.lastFour = true){
+    checkoutCC(user, cost)
+  }
 };
 const checkoutPayPal = (user, cost) => {
   // logic to add record
 };
 const checkoutWallet = (user, cost) => {
-  var newArray = []
-  for ( let i = 0; i < users.length; i++){
-    var user = users[i]
-    var cost = user.wallet
-    newArray.push(cost)
-    // wallet adjustment
-    // logic to add record
+  if(user.wallet >= 0){
+    checkoutCC(user, cost)
   }
-  var wallets = newArray.filter(e => e > 0)
-  console.log(wallets);
-}
-checkoutWallet()
+  // wallet adjustment
+  // logic to add record
+};
 
+// Iterate through our users and perform a proper checkout for each
 const callAllCheckouts = () => {
   // Each checkout call should look like this
   // const testUser = users[0];
   // checkout(testUser, 10);
-  for ( let i = 0; i < users.length; i++){
-    var element = users[i]
-    console.log(element);
+  for ( i = 0; i < users.lenght; i++){
+    checkout(users[i], 10);
   }
-}
-// callAllCheckouts()
+};
