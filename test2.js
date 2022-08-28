@@ -17,5 +17,16 @@ for (let index = 1; index <= 10; index++) {
 }
 console.log(array);
 
-const sliced1 = array.slice(2, 4)
-console.log(sliced1);
+// const sliced1 = array.slice(2, 4)
+
+array.forEach((e, index, newArry) => newArry[index] = e * 2 )
+
+console.log(array);
+
+
+var students = ["Dale", "Juan", "Quan"]
+
+students.forEach((item, index, arr) => arr[index] = "fuck " + item )
+// console.log(students);
+var map = students.map(e => "fuck " + e)
+console.log(map);
