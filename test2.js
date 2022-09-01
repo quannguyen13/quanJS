@@ -30,3 +30,4 @@ students.forEach((item, index, arr) => arr[index] = "fuck " + item )
 // console.log(students);
 var map = students.map(e => "fuck " + e)
 console.log(map);
+// 
