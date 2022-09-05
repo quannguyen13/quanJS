@@ -28,7 +28,7 @@ function check(numbers) {
              newArray.push(numbers[i]);
         }
     }
-    console.log(newArray);
+    // console.log(newArray);
 
 }
 // check(numbers)
@@ -38,7 +38,13 @@ function check(numbers) {
 var number = 100
 var newArray = []
 for (let i = 0; i <= number; i++) {
-    const element = array[i];
+    const element = i;
     newArray.push(element)
 }
 console.log(newArray);
+
+newArray.forEach((item, index, arr) => arr[index] = 2 * item)
+console.log(newArray);
+
+var map = newArray.map(e => e * 3)
+console.log(map);
