@@ -35,3 +35,10 @@ function check(numbers) {
 
 
 
+var number = 100
+var newArray = []
+for (let i = 0; i <= number; i++) {
+    const element = array[i];
+    newArray.push(element)
+}
+console.log(newArray);
