@@ -31,4 +31,7 @@ function check(numbers) {
     console.log(newArray);
 
 }
-check(numbers)
+// check(numbers)
+
+
+
