@@ -14,4 +14,3 @@ var students = ["Dale", "Juan", "Quan"]
 students.forEach((item, index, arr) => arr[index] = "fuck " + item )
 console.log(students);
 
-// 
