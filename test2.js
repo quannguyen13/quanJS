@@ -26,18 +26,19 @@ array.forEach((e, index, newArry) => newArry[index] = e * 2 )
 
 var students = ["Dale", "Juan", "Quan"]
 
-students.forEach((item, index, arr) => arr[index] = "fuck " + item )
+// students.forEach((item, index, arr) => arr[index] = "fuck " + item )
 // console.log(students);
 var map = students.map(e => "fuck " + e)
 // console.log(map);
 
-function count() {
+function count(str) {
     var newArray1 = []
     var newArray2 = []
-    var split = sentence.split("")
+    var convert = str.toString()
+    var split = convert.split("")
     console.log(split);
     for (let i = 0; i < split.length; i++) {
-        if (split[i] == "o") {
+        if (split[i] == "a") {
             newArray1.push(split[i])
         }  
     }
@@ -50,3 +51,4 @@ function count() {
     console.log([newArray1.length, newArray2.length]);
 }
 count(sentence)
+count(students)
