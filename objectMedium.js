@@ -245,6 +245,41 @@ function keysAndValues(obj) {
     var newArray = new Array(key, value)
     console.log(newArray);
 }
-keysAndValues({ a: 1, b: 2, c: 3 })
-keysAndValues({ a: "Apple", b: "Microsoft", c: "Google" })
-keysAndValues({ key1: true, key2: false, key3: undefined })
+// keysAndValues({ a: 1, b: 2, c: 3 })
+// keysAndValues({ a: "Apple", b: "Microsoft", c: "Google" })
+// keysAndValues({ key1: true, key2: false, key3: undefined })
+
+
+var male = {"great grandfather" : -3,
+           "grandfather": -2,
+           "father": -1,
+           "me!": 0,
+           "son": 1,
+           "grandson": 2,
+           "great grandson": 3
+ }
+
+var female = {"great grandmother" : -3,
+           "grandmother": -2,
+           "mother": -1,
+           "me!": 0,
+           "daughter": 1,
+           "granddaughter": 2,
+           "great granddaughter": 3
+ }
+function generation(number, str) {
+    if (str == "f"){
+        var result = Object.keys(female).filter(e => female[e] === number);
+        console.log(result.toString());
+    }
+    else {
+        var result = Object.keys(male).filter(e => male[e] === number);
+        console.log(result.toString());
+    }
+
+ }
+generation(2, "f")
+generation(-3, "m")
+generation(1, "f")
+generation(0, "m")
+generation(0, "f")
