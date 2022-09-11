@@ -823,3 +823,21 @@ function sum() {
 
 
 // https://edabit.com/challenge/ALGbgMWLuEdrh22fB
+
+function shiftToRight(a, b) {
+    if (b < 0) {
+        console.log("Error");
+    } else {
+        var result = a / ( 2 ** b )
+        console.log(Math.floor(result));
+    }
+
+}
+ 
+shiftToRight(80, 3)
+shiftToRight(-24, 2)
+shiftToRight(-5, 1)
+shiftToRight(4666, 6)
+shiftToRight(3777, 6)
+shiftToRight(-512, 10)
+shiftToRight(-512, -10)
