@@ -819,3 +819,7 @@ function sum() {
     console.log(sum);
 }
 // sum(10,20,40,30,110)
+
+
+
+// https://edabit.com/challenge/ALGbgMWLuEdrh22fB

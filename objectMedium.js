@@ -226,12 +226,25 @@ function intWithinBounds() {
         
     }
 }
-console.log(
-    intWithinBounds(3, 1, 9)
-);
-console.log(
-    intWithinBounds(6, 1, 6)
-);
-console.log(
-    intWithinBounds(4.5, 3, 8)
-);
+// console.log(
+//     intWithinBounds(3, 1, 9)
+// );
+// console.log(
+//     intWithinBounds(6, 1, 6)
+// );
+// console.log(
+//     intWithinBounds(4.5, 3, 8)
+// );
+
+
+
+// https://www.freecodecamp.org/news/how-to-create-an-array-in-javascript/
+function keysAndValues(obj) {
+    var key = Object.keys(obj)
+    var value = Object.values(obj)
+    var newArray = new Array(key, value)
+    console.log(newArray);
+}
+keysAndValues({ a: 1, b: 2, c: 3 })
+keysAndValues({ a: "Apple", b: "Microsoft", c: "Google" })
+keysAndValues({ key1: true, key2: false, key3: undefined })
