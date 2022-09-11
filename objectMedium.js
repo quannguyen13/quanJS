@@ -250,6 +250,9 @@ function keysAndValues(obj) {
 // keysAndValues({ key1: true, key2: false, key3: undefined })
 
 
+
+
+// https://edabit.com/challenge/48EJWLhF224na8po3
 var male = {"great grandfather" : -3,
            "grandfather": -2,
            "father": -1,
@@ -281,5 +284,8 @@ function generation(number, str) {
 generation(2, "f")
 generation(-3, "m")
 generation(1, "f")
+generation(2, "m")
+generation(-3, "f")
+generation(1, "m")
 generation(0, "m")
 generation(0, "f")
