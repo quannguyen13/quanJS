@@ -275,10 +275,11 @@ function generation(number, str) {
         var result = Object.keys(female).filter(e => female[e] === number);
         console.log(result.toString());
     }
-    else {
+    else if (str == "m"){
         var result = Object.keys(male).filter(e => male[e] === number);
         console.log(result.toString());
     }
+
 
  }
 generation(2, "f")
@@ -289,3 +290,4 @@ generation(-3, "f")
 generation(1, "m")
 generation(0, "m")
 generation(0, "f")
+// generation(6, "f")
