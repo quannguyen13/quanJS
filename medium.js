@@ -255,3 +255,19 @@ function sumDigProd() {
 
 
 
+var title = "The lord of the rings, the two towers"
+
+function replaceStr(str) {
+    var change = str.replaceAll("e", 2)
+    console.log(change);
+    // var split = str.split("")
+    // var change2 = split.map(i => i == "e" ? 3 : i)
+    // var join = change2.join("")
+    // console.log(join);
+
+}
+replaceStr(title)
+
+
+
+
