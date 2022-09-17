@@ -41,10 +41,10 @@ for (let i = 0; i <= number; i++) {
     const element = i;
     newArray.push(element)
 }
-console.log(newArray);
+// console.log(newArray);
 
 newArray.forEach((item, index, arr) => arr[index] = 2 * item)
-console.log(newArray);
+// console.log(newArray);
 
 var map = newArray.map(e => e * 3)
-console.log(map);
+// console.log(map);

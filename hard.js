@@ -1,4 +1,5 @@
 
+
 //  challenge: https://edabit.com/challenge/yXSTvCNen2DQHyrh6
 function getLength(array) {
     var breakOut = array.toString().split(",").length
@@ -303,7 +304,26 @@ function hackerSpeak(str) {
 
 }
 }
-console.log(
+// console.log(
 
-    hackerSpeak("javascript is cool")
-);
+//     hackerSpeak("javascript is cool")
+// );
+
+
+
+// ? https://www.geeksforgeeks.org/how-to-convert-array-of-strings-to-array-of-numbers-in-javascript/
+function countLoneOnes(number){
+    var array = Array.from(arguments)
+    var split = array.toString().split("").map(Number)
+    console.log(split);
+    for (let i = 0; i < split.length; i++) {
+        while (split[i] == 1){
+            console.log(split[i]++);
+            
+        }
+        
+    }
+
+}
+
+countLoneOnes(101)
