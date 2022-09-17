@@ -310,7 +310,7 @@ function hackerSpeak(str) {
 // );
 
 
-
+// https://edabit.com/challenge/BuAfYbHeMPJZpSesR
 // ? https://www.geeksforgeeks.org/how-to-convert-array-of-strings-to-array-of-numbers-in-javascript/
 function countLoneOnes(number){
     var array = Array.from(arguments)
