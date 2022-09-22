@@ -326,4 +326,4 @@ function countLoneOnes(number){
 
 }
 
-countLoneOnes(101)
+// countLoneOnes(101)
