@@ -324,8 +324,12 @@ function countLoneOnes(){
         }
         
     }
+    // console.log(`here are lone ones: ${newArray}`);
     var sum = newArray.reduce((a, b) => a + b, 0)
     console.log(sum);
 }
 
-countLoneOnes(1021)
+countLoneOnes(102131)
+countLoneOnes(1191)
+countLoneOnes(1111)
+countLoneOnes(462)
