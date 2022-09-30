@@ -313,17 +313,19 @@ function hackerSpeak(str) {
 // https://edabit.com/challenge/BuAfYbHeMPJZpSesR
 // ? https://www.geeksforgeeks.org/how-to-convert-array-of-strings-to-array-of-numbers-in-javascript/
 function countLoneOnes(number){
+    var newArray = []
     var array = Array.from(arguments)
     var split = array.toString().split("").map(Number)
     console.log(split);
     for (let i = 0; i < split.length; i++) {
         while (split[i] == 1){
-            console.log(split[i]++);
-            
+            var count = split[i]++
+            newArray.push(count)
         }
         
     }
-
+    var sum = newArray.reduce((a, b) => a + b, 0)
+    console.log(sum);
 }
 
-// countLoneOnes(101)
+countLoneOnes(1011)
